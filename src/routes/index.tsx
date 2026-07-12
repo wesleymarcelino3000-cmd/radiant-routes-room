@@ -174,18 +174,42 @@ function Hero() {
   return (
     <header className="relative aurora-bg pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-60" />
+      {/* Ambient conic glow orbs */}
+      <div className="absolute -top-40 -left-40 size-[520px] conic-glow rounded-full opacity-70 animate-drift" />
+      <div className="absolute top-1/3 -right-32 size-[420px] conic-glow rounded-full opacity-50 animate-drift [animation-delay:-6s]" />
+      <div className="absolute inset-0 noise-overlay pointer-events-none" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-7 animate-rise">
-          <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs text-muted-foreground mb-8">
-            <span className="size-1.5 rounded-full bg-lime animate-pulse" />
-            Disponível para novos projetos · Q3 2026
+          <div className="inline-flex items-center gap-2.5 rounded-full glass px-4 py-1.5 text-xs text-muted-foreground mb-8">
+            <span className="relative flex size-2">
+              <span className="absolute inset-0 rounded-full bg-lime/60 animate-pulse-ring" />
+              <span className="relative inline-flex size-2 rounded-full bg-lime" />
+            </span>
+            <span className="font-mono uppercase tracking-widest">Disponível</span>
+            <span className="w-px h-3 bg-border" />
+            Novos projetos · Q3 2026
           </div>
 
-          <h1 className="font-display font-bold tracking-tighter text-6xl md:text-7xl lg:text-8xl leading-[0.95] mb-8">
-            Transformamos ideias em{" "}
-            <span className="text-gradient italic">produtos digitais</span> que escalam.
+          <h1 className="font-display font-bold tracking-tighter text-6xl md:text-7xl lg:text-[7.5rem] leading-[0.92] mb-8">
+            Transformamos <span className="font-serif italic font-normal text-outline">ideias</span>
+            <br />
+            em <span className="text-gradient italic font-serif font-normal">produtos digitais</span>
+            <br />
+            que <span className="relative inline-block">
+              escalam
+              <svg className="absolute -bottom-2 left-0 w-full" height="10" viewBox="0 0 200 10" fill="none" preserveAspectRatio="none">
+                <path d="M2 8 Q 100 -2 198 6" stroke="url(#hg)" strokeWidth="2.5" strokeLinecap="round" fill="none" />
+                <defs>
+                  <linearGradient id="hg" x1="0" x2="1">
+                    <stop offset="0" stopColor="oklch(0.72 0.22 295)" />
+                    <stop offset="1" stopColor="oklch(0.72 0.22 220)" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+            <span className="text-primary">.</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed mb-10">
@@ -195,16 +219,18 @@ function Hero() {
           <div className="flex flex-wrap gap-4 mb-16">
             <a
               href="#contato"
-              className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-4 font-medium glow-primary hover:scale-[1.02] transition-transform"
+              className="group relative inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-4 font-medium glow-primary hover:scale-[1.02] transition-transform overflow-hidden"
             >
-              Solicitar orçamento grátis
-              <ArrowUpRight className="size-4 group-hover:rotate-45 transition-transform" />
+              <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+              <span className="relative">Solicitar orçamento grátis</span>
+              <ArrowUpRight className="relative size-4 group-hover:rotate-45 transition-transform" />
             </a>
             <a
               href="#portfolio"
               className="inline-flex items-center gap-2 rounded-full glass px-7 py-4 font-medium hover:bg-white/10 transition-colors"
             >
               Ver portfólio
+              <span className="font-mono text-xs text-muted-foreground">/12</span>
             </a>
           </div>
 
@@ -218,7 +244,14 @@ function Hero() {
         </div>
 
         <div className="lg:col-span-5 relative animate-rise [animation-delay:200ms]">
-          <div className="absolute -inset-8 bg-gradient-to-tr from-primary/30 via-accent/20 to-transparent blur-3xl" />
+          <div className="absolute -inset-8 bg-gradient-to-tr from-primary/40 via-accent/25 to-transparent blur-3xl" />
+
+          {/* Orbital rings */}
+          <div className="absolute inset-0 grid place-items-center pointer-events-none">
+            <div className="absolute size-[110%] rounded-full border border-primary/15 animate-spin-slow" />
+            <div className="absolute size-[125%] rounded-full border border-accent/10 animate-spin-slow [animation-direction:reverse] [animation-duration:60s]" />
+          </div>
+
           <div className="relative rounded-3xl overflow-hidden glass p-2 animate-float-slow">
             <img
               src={heroVisual}
@@ -227,21 +260,47 @@ function Hero() {
               height={1600}
               className="w-full h-auto rounded-2xl"
             />
+            {/* HUD scan lines */}
+            <div className="absolute inset-2 rounded-2xl pointer-events-none" style={{
+              backgroundImage: "repeating-linear-gradient(0deg, transparent 0, transparent 3px, oklch(1 0 0 / 0.03) 3px, oklch(1 0 0 / 0.03) 4px)"
+            }} />
+            {/* Corner brackets */}
+            <div className="absolute top-4 left-4 size-6 border-l-2 border-t-2 border-primary/60 rounded-tl-md" />
+            <div className="absolute top-4 right-4 size-6 border-r-2 border-t-2 border-accent/60 rounded-tr-md" />
+            <div className="absolute bottom-4 left-4 size-6 border-l-2 border-b-2 border-accent/60 rounded-bl-md" />
+            <div className="absolute bottom-4 right-4 size-6 border-r-2 border-b-2 border-primary/60 rounded-br-md" />
           </div>
-          <div className="absolute -bottom-6 -left-6 glass rounded-2xl px-5 py-4 flex items-center gap-3">
+
+          {/* HUD badges */}
+          <div className="absolute -bottom-6 -left-6 glass rounded-2xl px-5 py-4 flex items-center gap-3 shadow-2xl">
             <div className="grid place-items-center size-10 rounded-lg bg-lime/20 text-lime">
               <Zap className="size-5" />
             </div>
             <div>
-              <div className="text-xs text-muted-foreground">Lighthouse</div>
+              <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Lighthouse</div>
               <div className="font-display font-bold">99 / 100</div>
             </div>
+          </div>
+
+          <div className="absolute -top-4 -right-2 glass rounded-2xl px-4 py-3 flex items-center gap-3 shadow-2xl animate-float-slow [animation-delay:-3s]">
+            <div className="grid place-items-center size-9 rounded-lg bg-primary/25 text-primary">
+              <Rocket className="size-4" />
+            </div>
+            <div>
+              <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Deploy</div>
+              <div className="font-display font-bold text-sm">Edge · 42ms</div>
+            </div>
+          </div>
+
+          <div className="absolute top-1/2 -left-8 glass rounded-xl px-3 py-2 font-mono text-[10px] text-muted-foreground shadow-xl hidden md:block">
+            <span className="text-lime">●</span> uptime <span className="text-foreground">99.99%</span>
           </div>
         </div>
       </div>
     </header>
   );
 }
+
 
 function Stat({ value, label }: { value: string; label: string }) {
   return (
