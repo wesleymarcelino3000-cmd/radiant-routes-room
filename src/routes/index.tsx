@@ -96,7 +96,7 @@ const testimonials = [
     quote:
       "Meu restaurante ainda anotava pedidos no papel. Fizeram um sistema simples de comandas que qualquer garçom aprende em 10 minutos. Economizo pelo menos duas horas por dia no fechamento do caixa.",
     name: "Carlos Ferreira",
-    role: "Proprietário, Cantina do Carlão",
+    role: "Proprietário, Cantina do Carlão - Itaúna - MG",
   },
   {
     quote:
