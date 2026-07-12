@@ -462,9 +462,10 @@ function Cta() {
             <span className="size-1.5 rounded-full bg-lime animate-pulse" />
             Resposta em até 24h
           </div>
-          <h2 className="font-display font-bold tracking-tighter text-5xl md:text-7xl mb-6">
-            Vamos <span className="text-gradient italic">construir</span> algo memorável.
+          <h2 className="font-display font-semibold tracking-tight text-4xl md:text-6xl mb-6">
+            Vamos discutir seu próximo projeto.
           </h2>
+
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10">
             Conte seu desafio. Em uma call de 30 minutos, mapeamos escopo, prazo e orçamento — sem compromisso.
           </p>
