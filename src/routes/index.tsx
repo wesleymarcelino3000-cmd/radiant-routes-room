@@ -474,10 +474,10 @@ function Cta() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-12">
             <a
-              href="mailto:ola@nexus.digital"
+              href="mailto:primecode321@gmail.com"
               className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-4 font-medium glow-primary hover:scale-[1.02] transition-transform"
             >
-              ola@nexus.digital
+              primecode321@gmail.com
               <ArrowUpRight className="size-4 group-hover:rotate-45 transition-transform" />
             </a>
             <a
@@ -488,7 +488,7 @@ function Cta() {
             </a>
           </div>
           <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
-            <span className="inline-flex items-center gap-2"><Mail className="size-4" /> ola@nexus.digital</span>
+            <span className="inline-flex items-center gap-2"><Mail className="size-4" /> primecode321@gmail.com</span>
             <span className="inline-flex items-center gap-2"><Phone className="size-4" /> +55 11 9999-9999</span>
             
           </div>
