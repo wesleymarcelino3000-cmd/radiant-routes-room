@@ -427,7 +427,7 @@ function Portfolio({
     </section>
   );
 }
-const projectsType = projects;
+
 
 function Testimonials() {
   return (
