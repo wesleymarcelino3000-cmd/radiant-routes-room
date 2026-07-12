@@ -492,7 +492,7 @@ function Cta() {
           <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
             <span className="inline-flex items-center gap-2"><Mail className="size-4" /> ola@nexus.digital</span>
             <span className="inline-flex items-center gap-2"><Phone className="size-4" /> +55 11 9999-9999</span>
-            <span className="inline-flex items-center gap-2"><MapPin className="size-4" /> São Paulo, BR</span>
+            
           </div>
         </div>
       </div>
@@ -535,7 +535,7 @@ function Footer() {
       </div>
       <div className="max-w-7xl mx-auto pt-8 border-t border-border flex flex-col md:flex-row justify-between gap-4 text-xs text-muted-foreground">
         <div>© 2026 Nexus Digital. Todos os direitos reservados.</div>
-        <div className="font-mono uppercase tracking-widest">Engenheirado com rigor · São Paulo, BR</div>
+        <div className="font-mono uppercase tracking-widest">Engenheirado com rigor</div>
       </div>
     </footer>
   );
