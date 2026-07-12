@@ -88,23 +88,24 @@ const projects = [
 const testimonials = [
   {
     quote:
-      "A Nexus não entregou apenas um app — entregou uma vantagem competitiva. Triplicamos nossa velocidade de engenharia em 4 meses.",
-    name: "Marcus Valente",
-    role: "CTO, Quantum Synergy",
+      "Precisava de um site pra minha clínica que passasse mais confiança. Eles entenderam rápido o que eu queria e o resultado ficou ótimo. Já recebi vários pacientes novos que disseram ter marcado pelo site.",
+    name: "Dra. Patrícia Mendes",
+    role: "Clínica Odontológica, Campinas",
   },
   {
     quote:
-      "A precisão técnica deles é rara. Cada detalhe pensado, cada linha de código com propósito. É o padrão que buscávamos há anos.",
-    name: "Beatriz Camargo",
-    role: "Fundadora, Finova Tech",
+      "Meu restaurante ainda anotava pedidos no papel. Fizeram um sistema simples de comandas que qualquer garçom aprende em 10 minutos. Economizo pelo menos duas horas por dia no fechamento do caixa.",
+    name: "Carlos Ferreira",
+    role: "Proprietário, Cantina do Carlão",
   },
   {
     quote:
-      "Design impecável somado a engenharia sênior. Nosso NPS saltou 42 pontos após o relançamento com a Nexus.",
-    name: "Ricardo Silveira",
-    role: "Head of Product, Volt Energy",
+      "Sou meio leiga em tecnologia e tinha medo de contratar. Explicaram tudo com paciência, sem enrolar. Meu e-commerce ficou pronto no prazo combinado e as vendas online já superam a loja física.",
+    name: "Juliana Rocha",
+    role: "Loja de Roupas Infantis",
   },
 ];
+
 
 const stack = ["React", "Next.js", "TypeScript", "Node.js", "PostgreSQL", "Swift", "Kotlin", "Flutter", "AWS", "Vercel", "Figma", "Rust", "GraphQL", "Prisma"];
 
