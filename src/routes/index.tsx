@@ -521,7 +521,7 @@ function Footer() {
         <div>
           <h5 className="font-mono text-xs uppercase tracking-widest text-muted-foreground mb-4">Social</h5>
           <ul className="space-y-2 text-sm">
-            <li><a href="https://instagram.com/primecode321" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-primary transition-colors"><Instagram className="size-4" /> Instagram</a></li>
+            <li><a href="https://www.instagram.com/primecode321/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-primary transition-colors"><Instagram className="size-4" /> Instagram</a></li>
             <li><a href="https://www.tiktok.com/@primecode43" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-primary transition-colors"><Music2 className="size-4" /> TikTok</a></li>
           </ul>
         </div>
