@@ -14,8 +14,7 @@ import {
   MapPin,
   Phone,
   Instagram,
-  Linkedin,
-  Github,
+  Music2,
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
@@ -522,9 +521,8 @@ function Footer() {
         <div>
           <h5 className="font-mono text-xs uppercase tracking-widest text-muted-foreground mb-4">Social</h5>
           <ul className="space-y-2 text-sm">
-            <li><a href="#" className="inline-flex items-center gap-2 hover:text-primary transition-colors"><Linkedin className="size-4" /> LinkedIn</a></li>
             <li><a href="#" className="inline-flex items-center gap-2 hover:text-primary transition-colors"><Instagram className="size-4" /> Instagram</a></li>
-            <li><a href="#" className="inline-flex items-center gap-2 hover:text-primary transition-colors"><Github className="size-4" /> GitHub</a></li>
+            <li><a href="#" className="inline-flex items-center gap-2 hover:text-primary transition-colors"><Music2 className="size-4" /> TikTok</a></li>
           </ul>
         </div>
       </div>
