@@ -137,6 +137,42 @@
 .animate-marquee { animation: marquee 30s linear infinite; }
 .animate-rise { animation: rise 0.9s cubic-bezier(0.19, 1, 0.22, 1) both; }
 
+@keyframes drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(30px, -20px) scale(1.08); }
+}
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes pulse-ring {
+  0% { transform: scale(0.85); opacity: 0.7; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+.animate-drift { animation: drift 14s ease-in-out infinite; }
+.animate-spin-slow { animation: spin-slow 40s linear infinite; }
+.animate-pulse-ring { animation: pulse-ring 2.2s cubic-bezier(0.19, 1, 0.22, 1) infinite; }
+
+@utility noise {
+  position: relative;
+}
+@utility noise-overlay {
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.35 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  opacity: 0.06;
+  mix-blend-mode: overlay;
+}
+
+@utility text-outline {
+  -webkit-text-stroke: 1px oklch(1 0 0 / 0.35);
+  color: transparent;
+}
+
+@utility conic-glow {
+  background: conic-gradient(from 180deg at 50% 50%, oklch(0.72 0.22 295 / 0.35), oklch(0.72 0.22 220 / 0.35), oklch(0.65 0.22 180 / 0.25), oklch(0.72 0.22 295 / 0.35));
+  filter: blur(60px);
+}
+
+
 a[href*="lovable.dev"], 
 iframe[src*="lovable.dev"],
 div[style*="Edit with Lovable"],
