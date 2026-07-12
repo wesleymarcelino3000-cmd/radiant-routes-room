@@ -84,38 +84,38 @@
   }
 }
 
-/* Aurora background */
+/* Subtle corporate ambient background */
 @utility aurora-bg {
   background:
-    radial-gradient(60% 50% at 15% 10%, oklch(0.72 0.22 295 / 0.28), transparent 60%),
-    radial-gradient(50% 45% at 85% 20%, oklch(0.72 0.22 220 / 0.28), transparent 60%),
-    radial-gradient(55% 55% at 50% 90%, oklch(0.65 0.22 180 / 0.18), transparent 60%),
+    radial-gradient(60% 45% at 20% 0%, oklch(0.62 0.14 245 / 0.14), transparent 60%),
+    radial-gradient(45% 40% at 90% 15%, oklch(0.55 0.10 240 / 0.10), transparent 65%),
     var(--color-background);
 }
 
 @utility grid-bg {
   background-image:
-    linear-gradient(to right, oklch(1 0 0 / 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, oklch(1 0 0 / 0.04) 1px, transparent 1px);
-  background-size: 56px 56px;
+    linear-gradient(to right, oklch(1 0 0 / 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(1 0 0 / 0.035) 1px, transparent 1px);
+  background-size: 64px 64px;
 }
 
 @utility text-gradient {
-  background: linear-gradient(135deg, oklch(0.98 0.005 270) 0%, oklch(0.72 0.22 295) 50%, oklch(0.72 0.22 220) 100%);
+  background: linear-gradient(135deg, oklch(0.98 0.005 250) 0%, oklch(0.78 0.08 245) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 @utility glass {
-  background: linear-gradient(135deg, oklch(1 0 0 / 0.06), oklch(1 0 0 / 0.02));
-  border: 1px solid oklch(1 0 0 / 0.08);
-  backdrop-filter: blur(20px) saturate(140%);
+  background: linear-gradient(135deg, oklch(1 0 0 / 0.045), oklch(1 0 0 / 0.015));
+  border: 1px solid oklch(1 0 0 / 0.07);
+  backdrop-filter: blur(16px) saturate(120%);
 }
 
 @utility glow-primary {
-  box-shadow: 0 0 60px -10px oklch(0.72 0.22 295 / 0.55), 0 0 120px -30px oklch(0.72 0.22 220 / 0.35);
+  box-shadow: 0 10px 40px -12px oklch(0.62 0.14 245 / 0.35);
 }
+
 
 @keyframes float-slow {
   0%, 100% { transform: translateY(0) rotate(0); }
