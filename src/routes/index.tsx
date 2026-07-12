@@ -492,7 +492,7 @@ function Cta() {
           <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
             <span className="inline-flex items-center gap-2"><Mail className="size-4" /> ola@nexus.digital</span>
             <span className="inline-flex items-center gap-2"><Phone className="size-4" /> +55 11 9999-9999</span>
-            <span className="inline-flex items-center gap-2"><MapPin className="size-4" /> São Paulo, BR</span>
+            
           </div>
         </div>
       </div>
