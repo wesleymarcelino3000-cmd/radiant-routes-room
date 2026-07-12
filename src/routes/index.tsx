@@ -90,7 +90,7 @@ const testimonials = [
     quote:
       "Precisava de um site pra minha clínica que passasse mais confiança. Eles entenderam rápido o que eu queria e o resultado ficou ótimo. Já recebi vários pacientes novos que disseram ter marcado pelo site.",
     name: "Dra. Patrícia Mendes",
-    role: "Clínica Odontológica, Campinas",
+    role: "Clínica Odontológica, Divinópolis - MG",
   },
   {
     quote:
