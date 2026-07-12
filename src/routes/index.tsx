@@ -25,6 +25,7 @@ import projectFintech from "@/assets/project-fintech.jpg";
 import projectMobile from "@/assets/project-mobile.jpg";
 import projectSaas from "@/assets/project-saas.jpg";
 import projectBrand from "@/assets/project-brand.jpg";
+import primecodeLogo from "@/assets/primecode-logo.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -151,11 +152,8 @@ function Nav() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2 font-display font-bold text-lg tracking-tight">
-          <span className="grid place-items-center size-8 rounded-lg bg-gradient-to-br from-primary to-accent glow-primary">
-            <Sparkle className="size-4 text-primary-foreground" />
-          </span>
-          PrimeCode<span className="text-primary">.</span>
+        <a href="#" className="flex items-center" aria-label="PrimeCode — início">
+          <img src={primecodeLogo} alt="PrimeCode" className="h-10 w-auto md:h-12" />
         </a>
         <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           <a href="#servicos" className="hover:text-foreground transition-colors">Serviços</a>
@@ -505,11 +503,8 @@ function Footer() {
     <footer className="border-t border-border py-16 px-6">
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
         <div className="md:col-span-2">
-          <div className="flex items-center gap-2 font-display font-bold text-lg mb-4">
-            <span className="grid place-items-center size-8 rounded-lg bg-gradient-to-br from-primary to-accent">
-              <Sparkle className="size-4 text-primary-foreground" />
-            </span>
-            PrimeCode<span className="text-primary">.</span>
+          <div className="mb-4">
+            <img src={primecodeLogo} alt="PrimeCode" className="h-14 w-auto" />
           </div>
           <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
             Transformando ideias em soluções digitais. Web, software e apps móveis com engenharia rigorosa e design de padrão internacional.
