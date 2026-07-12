@@ -512,7 +512,7 @@ function Footer() {
             PrimeCode<span className="text-primary">.</span>
           </div>
           <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
-            Agência sênior de soluções digitais. Web, software e apps móveis com engenharia rigorosa e design de padrão internacional.
+            Transformando ideias em soluções digitais. Web, software e apps móveis com engenharia rigorosa e design de padrão internacional.
           </p>
         </div>
         <div>
