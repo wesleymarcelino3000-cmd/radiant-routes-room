@@ -92,19 +92,19 @@ const testimonials = [
     quote:
       "Precisava de um site pra minha clínica que passasse mais confiança. Eles entenderam rápido o que eu queria e o resultado ficou ótimo. Já recebi vários pacientes novos que disseram ter marcado pelo site.",
     name: "Dra. Patrícia Mendes",
-    role: "Clínica Odontológica, Divinópolis - MG",
+    role: "Clínica Odontológica",
   },
   {
     quote:
       "Meu restaurante ainda anotava pedidos no papel. Fizeram um sistema simples de comandas que qualquer garçom aprende em 10 minutos. Economizo pelo menos duas horas por dia no fechamento do caixa.",
     name: "Carlos Ferreira",
-    role: "Proprietário, Cantina do Carlão - Itaúna - MG",
+    role: "Proprietário, Cantina do Carlão",
   },
   {
     quote:
       "Sou meio leiga em tecnologia e tinha medo de contratar. Explicaram tudo com paciência, sem enrolar. Meu e-commerce ficou pronto no prazo combinado e as vendas online já superam a loja física.",
     name: "Juliana Rocha",
-    role: "Loja de Roupas Infantis, Pará de Minas - MG",
+    role: "Loja de Roupas Infantis",
   },
 ];
 
