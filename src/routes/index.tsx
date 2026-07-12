@@ -583,8 +583,8 @@ const faqs = [
     a: "Sim. Oferecemos planos mensais de manutenção que incluem atualizações, backups, monitoramento e pequenos ajustes. Também atendemos sob demanda quando preferir.",
   },
   {
-    q: "Atendem clientes fora de Minas Gerais?",
-    a: "Sim. Somos do Centro-Oeste Mineiro, mas atendemos todo o Brasil de forma 100% remota. Reuniões por videoconferência e comunicação por WhatsApp e e-mail.",
+    q: "Atendem clientes de qualquer região?",
+    a: "Sim. Atendemos todo o Brasil de forma 100% remota. Reuniões por videoconferência e comunicação por WhatsApp e e-mail.",
   },
 ];
 
