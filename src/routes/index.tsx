@@ -29,13 +29,13 @@ import projectBrand from "@/assets/project-brand.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Nexus — Agência de Soluções Digitais de Alta Performance" },
+      { title: "PrimeCode — Agência de Soluções Digitais de Alta Performance" },
       {
         name: "description",
         content:
           "Construímos web, software sob medida e apps móveis com engenharia rigorosa e design cinematográfico. Transformamos ideias em produtos digitais que escalam.",
       },
-      { property: "og:title", content: "Nexus — Soluções Digitais que Escalam" },
+      { property: "og:title", content: "PrimeCode — Soluções Digitais que Escalam" },
       {
         property: "og:description",
         content:
@@ -155,7 +155,7 @@ function Nav() {
           <span className="grid place-items-center size-8 rounded-lg bg-gradient-to-br from-primary to-accent glow-primary">
             <Sparkle className="size-4 text-primary-foreground" />
           </span>
-          Nexus<span className="text-primary">.</span>
+          PrimeCode<span className="text-primary">.</span>
         </a>
         <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           <a href="#servicos" className="hover:text-foreground transition-colors">Serviços</a>
@@ -316,7 +316,7 @@ function WhyUs() {
       <div className="absolute inset-0 aurora-bg opacity-40" />
       <div className="relative max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
         <div>
-          <SectionHeader label="Por que Nexus" title="Diferenciais que aparecem no produto final." align="left" />
+          <SectionHeader label="Por que PrimeCode" title="Diferenciais que aparecem no produto final." align="left" />
           <div className="grid sm:grid-cols-2 gap-6 mt-4">
             {differentiators.map((d) => (
               <div key={d.title} className="glass rounded-2xl p-6">
@@ -435,7 +435,7 @@ function Testimonials() {
   return (
     <section className="py-32 px-6 relative">
       <div className="max-w-7xl mx-auto">
-        <SectionHeader label="Clientes" title="O que dizem sobre trabalhar com a Nexus." />
+        <SectionHeader label="Clientes" title="O que dizem sobre trabalhar com a PrimeCode." />
         <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((t) => (
             <div key={t.name} className="glass rounded-3xl p-8 flex flex-col">
@@ -509,7 +509,7 @@ function Footer() {
             <span className="grid place-items-center size-8 rounded-lg bg-gradient-to-br from-primary to-accent">
               <Sparkle className="size-4 text-primary-foreground" />
             </span>
-            Nexus<span className="text-primary">.</span>
+            PrimeCode<span className="text-primary">.</span>
           </div>
           <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
             Agência sênior de soluções digitais. Web, software e apps móveis com engenharia rigorosa e design de padrão internacional.
@@ -534,7 +534,7 @@ function Footer() {
         </div>
       </div>
       <div className="max-w-7xl mx-auto pt-8 border-t border-border flex flex-col md:flex-row justify-between gap-4 text-xs text-muted-foreground">
-        <div>© 2026 Nexus Digital. Todos os direitos reservados.</div>
+        <div>© 2026 PrimeCode. Todos os direitos reservados.</div>
         <div className="font-mono uppercase tracking-widest">Engenheirado com rigor</div>
       </div>
     </footer>
