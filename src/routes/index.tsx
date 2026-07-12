@@ -127,7 +127,9 @@ function HomePage() {
       <WhyUs />
       <Portfolio active={active} setActive={setActive} projects={filtered} />
       <Testimonials />
+      <Faq />
       <Cta />
+
       <Footer />
     </div>
   );
