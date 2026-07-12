@@ -563,8 +563,8 @@ function SectionHeader({
 
 const faqs = [
   {
-    q: "Quanto custa um projeto?",
-    a: "Depende do escopo. Um site institucional bem-feito começa por volta de R$ 4.500. Sistemas sob medida e aplicativos variam conforme complexidade. Fazemos um orçamento detalhado gratuito após uma conversa inicial de 30 minutos.",
+    q: "Como funciona o orçamento de um projeto?",
+    a: "Cada projeto é único, então preferimos entender antes de falar em valores. Marcamos uma conversa inicial de 30 minutos, sem compromisso, para conhecer seu negócio e objetivos. Depois enviamos uma proposta detalhada com escopo, prazo e investimento sob medida.",
   },
   {
     q: "Em quanto tempo meu site ou sistema fica pronto?",
