@@ -535,7 +535,7 @@ function Footer() {
       </div>
       <div className="max-w-7xl mx-auto pt-8 border-t border-border flex flex-col md:flex-row justify-between gap-4 text-xs text-muted-foreground">
         <div>© 2026 Nexus Digital. Todos os direitos reservados.</div>
-        <div className="font-mono uppercase tracking-widest">Engenheirado com rigor · São Paulo, BR</div>
+        <div className="font-mono uppercase tracking-widest">Engenheirado com rigor</div>
       </div>
     </footer>
   );
