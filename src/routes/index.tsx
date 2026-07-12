@@ -102,7 +102,7 @@ const testimonials = [
     quote:
       "Sou meio leiga em tecnologia e tinha medo de contratar. Explicaram tudo com paciência, sem enrolar. Meu e-commerce ficou pronto no prazo combinado e as vendas online já superam a loja física.",
     name: "Juliana Rocha",
-    role: "Loja de Roupas Infantis",
+    role: "Loja de Roupas Infantis, Pará de Minas - MG",
   },
 ];
 
