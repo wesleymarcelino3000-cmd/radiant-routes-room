@@ -360,7 +360,7 @@ function Portfolio({
 }: {
   active: string;
   setActive: (v: "todos" | "web" | "mobile" | "software") => void;
-  projects: typeof projectsType;
+  projects: typeof import("./index").projects extends never ? never : Array<{ img: string; tag: string; title: string; desc: string; year: string }>;
 }) {
   const filters: Array<{ id: "todos" | "web" | "mobile" | "software"; label: string }> = [
     { id: "todos", label: "Todos" },
