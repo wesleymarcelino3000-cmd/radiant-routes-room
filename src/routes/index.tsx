@@ -560,3 +560,63 @@ function SectionHeader({
     </div>
   );
 }
+
+const faqs = [
+  {
+    q: "Quanto custa um projeto?",
+    a: "Depende do escopo. Um site institucional bem-feito começa por volta de R$ 4.500. Sistemas sob medida e aplicativos variam conforme complexidade. Fazemos um orçamento detalhado gratuito após uma conversa inicial de 30 minutos.",
+  },
+  {
+    q: "Em quanto tempo meu site ou sistema fica pronto?",
+    a: "Sites institucionais entre 2 e 4 semanas. E-commerces e sistemas sob medida entre 6 e 12 semanas. Aplicativos móveis entre 2 e 4 meses. Definimos o prazo real logo na proposta e cumprimos.",
+  },
+  {
+    q: "Preciso entender de tecnologia para trabalhar com vocês?",
+    a: "Não. Conversamos em linguagem simples, sem jargão. Explicamos cada etapa e mostramos o progresso em ambiente de teste toda semana para você acompanhar e opinar.",
+  },
+  {
+    q: "O código e o site ficam no meu nome?",
+    a: "Sim, sempre. Tudo que produzimos é seu: código-fonte, domínio, contas de hospedagem e acessos. Você não fica preso a nós.",
+  },
+  {
+    q: "Vocês dão manutenção depois de entregar?",
+    a: "Sim. Oferecemos planos mensais de manutenção que incluem atualizações, backups, monitoramento e pequenos ajustes. Também atendemos sob demanda quando preferir.",
+  },
+  {
+    q: "Atendem clientes fora de Minas Gerais?",
+    a: "Sim. Somos do Centro-Oeste Mineiro, mas atendemos todo o Brasil de forma 100% remota. Reuniões por videoconferência e comunicação por WhatsApp e e-mail.",
+  },
+];
+
+function Faq() {
+  return (
+    <section id="faq" className="py-32 px-6 border-t border-border">
+      <div className="max-w-4xl mx-auto">
+        <SectionHeader label="FAQ" title="Perguntas frequentes." />
+        <Accordion type="single" collapsible className="w-full">
+          {faqs.map((item, i) => (
+            <AccordionItem key={i} value={`item-${i}`} className="border-border">
+              <AccordionTrigger className="text-left font-display font-medium text-lg hover:no-underline hover:text-primary py-6">
+                {item.q}
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground leading-relaxed text-base pb-6">
+                {item.a}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+        <div className="mt-12 text-center">
+          <p className="text-muted-foreground mb-4">Ainda tem dúvidas?</p>
+          <a
+            href="#contato"
+            className="inline-flex items-center gap-2 rounded-md bg-primary text-primary-foreground px-6 py-3 text-sm font-medium hover:bg-primary/90 transition-colors"
+          >
+            Fale conosco
+            <ArrowUpRight className="size-4" />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
