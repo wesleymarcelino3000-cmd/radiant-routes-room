@@ -29,13 +29,13 @@ import projectBrand from "@/assets/project-brand.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "PrimeCode — Agência de Soluções Digitais de Alta Performance" },
+      { title: "PrimeCode — Transformando ideias em soluções digitais" },
       {
         name: "description",
         content:
           "Construímos web, software sob medida e apps móveis com engenharia rigorosa e design cinematográfico. Transformamos ideias em produtos digitais que escalam.",
       },
-      { property: "og:title", content: "PrimeCode — Soluções Digitais que Escalam" },
+      { property: "og:title", content: "PrimeCode — Transformando ideias em soluções digitais" },
       {
         property: "og:description",
         content:

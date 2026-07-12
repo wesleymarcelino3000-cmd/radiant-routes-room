@@ -77,13 +77,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "PrimeCode — Agência de Soluções Digitais" },
+      { title: "PrimeCode — Transformando ideias em soluções digitais" },
       {
         name: "description",
         content:
           "Agência sênior de web, software sob medida e apps móveis. Engenharia rigorosa e design cinematográfico.",
       },
-      { property: "og:title", content: "PrimeCode — Soluções Digitais que Escalam" },
+      { property: "og:title", content: "PrimeCode — Transformando ideias em soluções digitais" },
       {
         property: "og:description",
         content: "Web, software e mobile de alto padrão sob um mesmo teto.",
