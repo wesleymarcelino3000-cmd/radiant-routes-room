@@ -242,11 +242,12 @@ function Hero() {
 function Stat({ value, label }: { value: string; label: string }) {
   return (
     <div>
-      <div className="font-display font-bold text-3xl md:text-4xl text-gradient">{value}</div>
+      <div className="font-display font-semibold text-3xl md:text-4xl text-foreground">{value}</div>
       <div className="text-xs uppercase tracking-widest text-muted-foreground mt-1">{label}</div>
     </div>
   );
 }
+
 
 function TechMarquee() {
   return (
