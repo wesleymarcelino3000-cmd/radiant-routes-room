@@ -17,6 +17,8 @@ import {
   Linkedin,
   Github,
 } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+
 
 import heroVisual from "@/assets/hero-visual.jpg";
 import projectFintech from "@/assets/project-fintech.jpg";
