@@ -551,7 +551,7 @@ function SectionHeader({
         <span className="size-1 rounded-full bg-primary" />
         {label}
       </div>
-      <h2 className="font-display font-bold tracking-tighter text-4xl md:text-6xl leading-[1.05]">{title}</h2>
+      <h2 className="font-display font-semibold tracking-tight text-4xl md:text-5xl leading-[1.1]">{title}</h2>
     </div>
   );
 }
