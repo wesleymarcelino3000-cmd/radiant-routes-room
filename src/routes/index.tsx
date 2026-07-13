@@ -172,11 +172,14 @@ function Nav() {
           <a href="#contato" className="hover:text-foreground transition-colors">Contato</a>
         </div>
         <a
-          href="#contato"
+          href={waLink("Olá! Gostaria de solicitar um orçamento com a PrimeCode.")}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Solicitar orçamento pelo WhatsApp"
           className="group inline-flex items-center gap-2 rounded-full bg-foreground text-background px-5 py-2.5 text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
         >
+          <WhatsAppIcon className="size-4" />
           Orçamento
-          <ArrowUpRight className="size-4 group-hover:rotate-45 transition-transform" />
         </a>
       </div>
     </nav>
