@@ -211,11 +211,14 @@ function Hero() {
 
           <div className="flex flex-wrap gap-3 mb-16">
             <a
-              href="#contato"
+              href={waLink("Olá! Gostaria de solicitar uma proposta para meu projeto.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Solicitar proposta pelo WhatsApp"
               className="inline-flex items-center gap-2 rounded-md bg-primary text-primary-foreground px-6 py-3.5 text-sm font-medium hover:bg-primary/90 transition-colors"
             >
-              Solicitar proposta
-              <ArrowUpRight className="size-4" />
+              <WhatsAppIcon className="size-4" />
+              Solicitar proposta no WhatsApp
             </a>
             <a
               href="#portfolio"
