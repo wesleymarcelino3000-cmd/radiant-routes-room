@@ -144,7 +144,24 @@ function HomePage() {
       <Cta />
 
       <Footer />
+      <WhatsAppFab />
     </div>
+  );
+}
+
+function WhatsAppFab() {
+  return (
+    <a
+      href={waLink("Olá! Quero falar com a PrimeCode.")}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Fale conosco no WhatsApp"
+      className="fixed bottom-6 right-6 z-50 inline-flex items-center justify-center size-14 rounded-full bg-[#25D366] text-white shadow-lg shadow-black/30 hover:scale-110 transition-transform focus:outline-none focus:ring-4 focus:ring-[#25D366]/40"
+    >
+      <WhatsAppIcon className="size-7" />
+      <span className="sr-only">Fale conosco no WhatsApp</span>
+      <span className="absolute inset-0 rounded-full bg-[#25D366] opacity-60 animate-ping" aria-hidden="true" />
+    </a>
   );
 }
 
