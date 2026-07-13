@@ -630,11 +630,14 @@ function Faq() {
         <div className="mt-12 text-center">
           <p className="text-muted-foreground mb-4">Ainda tem dúvidas?</p>
           <a
-            href="#contato"
-            className="inline-flex items-center gap-2 rounded-md bg-primary text-primary-foreground px-6 py-3 text-sm font-medium hover:bg-primary/90 transition-colors"
+            href={waLink("Olá! Tenho uma dúvida sobre os serviços da PrimeCode.")}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Tirar dúvidas pelo WhatsApp"
+            className="inline-flex items-center gap-2 rounded-md bg-[#25D366] text-white px-6 py-3 text-sm font-medium hover:bg-[#20bd5a] transition-colors"
           >
-            Fale conosco
-            <ArrowUpRight className="size-4" />
+            <WhatsAppIcon className="size-4" />
+            Fale conosco no WhatsApp
           </a>
         </div>
       </div>
