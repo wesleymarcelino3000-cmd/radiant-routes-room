@@ -312,8 +312,14 @@ function Services() {
                     </span>
                   ))}
                 </div>
-                <a href="#contato" className="inline-flex items-center gap-2 text-sm text-primary hover:gap-3 transition-all">
-                  Iniciar projeto <ArrowUpRight className="size-4" />
+                <a
+                  href={waLink(`Olá! Tenho interesse no serviço de ${s.title}. Podemos conversar?`)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Iniciar projeto de ${s.title} pelo WhatsApp`}
+                  className="inline-flex items-center gap-2 text-sm text-primary hover:gap-3 transition-all"
+                >
+                  <WhatsAppIcon className="size-3.5" /> Iniciar projeto <ArrowUpRight className="size-4" />
                 </a>
               </div>
             </article>
