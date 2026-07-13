@@ -15,6 +15,7 @@ import {
   Phone,
   Instagram,
   Music2,
+  MessageCircle,
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
@@ -25,6 +26,16 @@ import projectMobile from "@/assets/project-mobile.jpg";
 import projectSaas from "@/assets/project-saas.jpg";
 import projectBrand from "@/assets/project-brand.jpg";
 import primecodeLogo from "@/assets/primecode-logo.png";
+
+const WHATSAPP_NUMBER = "5537920008631";
+const waLink = (message: string) =>
+  `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+const WhatsAppIcon = ({ className = "size-4" }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.02 2C6.484 2 2 6.484 2 12.02c0 1.762.464 3.483 1.345 4.997L2 22l5.117-1.328a9.96 9.96 0 004.902 1.267h.004c5.535 0 10.019-4.484 10.02-10.019a9.955 9.955 0 00-2.929-7.087A9.958 9.958 0 0012.02 2z" />
+  </svg>
+);
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -133,7 +144,24 @@ function HomePage() {
       <Cta />
 
       <Footer />
+      <WhatsAppFab />
     </div>
+  );
+}
+
+function WhatsAppFab() {
+  return (
+    <a
+      href={waLink("Olá! Quero falar com a PrimeCode.")}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Fale conosco no WhatsApp"
+      className="fixed bottom-6 right-6 z-50 inline-flex items-center justify-center size-14 rounded-full bg-[#25D366] text-white shadow-lg shadow-black/30 hover:scale-110 transition-transform focus:outline-none focus:ring-4 focus:ring-[#25D366]/40"
+    >
+      <WhatsAppIcon className="size-7" />
+      <span className="sr-only">Fale conosco no WhatsApp</span>
+      <span className="absolute inset-0 rounded-full bg-[#25D366] opacity-60 animate-ping" aria-hidden="true" />
+    </a>
   );
 }
 
@@ -161,11 +189,14 @@ function Nav() {
           <a href="#contato" className="hover:text-foreground transition-colors">Contato</a>
         </div>
         <a
-          href="#contato"
+          href={waLink("Olá! Gostaria de solicitar um orçamento com a PrimeCode.")}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Solicitar orçamento pelo WhatsApp"
           className="group inline-flex items-center gap-2 rounded-full bg-foreground text-background px-5 py-2.5 text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
         >
+          <WhatsAppIcon className="size-4" />
           Orçamento
-          <ArrowUpRight className="size-4 group-hover:rotate-45 transition-transform" />
         </a>
       </div>
     </nav>
@@ -197,11 +228,14 @@ function Hero() {
 
           <div className="flex flex-wrap gap-3 mb-16">
             <a
-              href="#contato"
+              href={waLink("Olá! Gostaria de solicitar uma proposta para meu projeto.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Solicitar proposta pelo WhatsApp"
               className="inline-flex items-center gap-2 rounded-md bg-primary text-primary-foreground px-6 py-3.5 text-sm font-medium hover:bg-primary/90 transition-colors"
             >
-              Solicitar proposta
-              <ArrowUpRight className="size-4" />
+              <WhatsAppIcon className="size-4" />
+              Solicitar proposta no WhatsApp
             </a>
             <a
               href="#portfolio"
@@ -295,8 +329,14 @@ function Services() {
                     </span>
                   ))}
                 </div>
-                <a href="#contato" className="inline-flex items-center gap-2 text-sm text-primary hover:gap-3 transition-all">
-                  Iniciar projeto <ArrowUpRight className="size-4" />
+                <a
+                  href={waLink(`Olá! Tenho interesse no serviço de ${s.title}. Podemos conversar?`)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Iniciar projeto de ${s.title} pelo WhatsApp`}
+                  className="inline-flex items-center gap-2 text-sm text-primary hover:gap-3 transition-all"
+                >
+                  <WhatsAppIcon className="size-3.5" /> Iniciar projeto <ArrowUpRight className="size-4" />
                 </a>
               </div>
             </article>
@@ -471,21 +511,27 @@ function Cta() {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10">
             Conte seu desafio. Em uma call de 30 minutos, mapeamos escopo, prazo e orçamento — sem compromisso.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center mb-12">
+          <div className="flex flex-wrap gap-4 justify-center mb-4">
             <a
-              href="mailto:primecode321@gmail.com"
-              className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-4 font-medium glow-primary hover:scale-[1.02] transition-transform"
+              href={waLink("Olá! Quero conversar sobre um projeto com a PrimeCode.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Falar com a PrimeCode no WhatsApp"
+              className="group inline-flex items-center gap-2 rounded-full bg-[#25D366] text-white px-7 py-4 font-medium hover:scale-[1.02] transition-transform shadow-lg shadow-[#25D366]/20"
             >
-              primecode321@gmail.com
+              <WhatsAppIcon className="size-5" />
+              Falar no WhatsApp
               <ArrowUpRight className="size-4 group-hover:rotate-45 transition-transform" />
             </a>
             <a
-              href="#portfolio"
+              href="mailto:primecode321@gmail.com"
               className="inline-flex items-center gap-2 rounded-full glass px-7 py-4 font-medium hover:bg-white/10 transition-colors"
             >
-              Agendar call
+              <Mail className="size-4" />
+              Enviar e-mail
             </a>
           </div>
+          <p className="text-xs text-muted-foreground mb-10">Atendimento rápido via WhatsApp — respondemos em minutos</p>
           <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
             <span className="inline-flex items-center gap-2"><Mail className="size-4" /> primecode321@gmail.com</span>
             <a href="https://wa.me/5537920008631" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-foreground transition-colors"><Phone className="size-4" /> +55 37 92000-8631</a>
@@ -601,11 +647,14 @@ function Faq() {
         <div className="mt-12 text-center">
           <p className="text-muted-foreground mb-4">Ainda tem dúvidas?</p>
           <a
-            href="#contato"
-            className="inline-flex items-center gap-2 rounded-md bg-primary text-primary-foreground px-6 py-3 text-sm font-medium hover:bg-primary/90 transition-colors"
+            href={waLink("Olá! Tenho uma dúvida sobre os serviços da PrimeCode.")}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Tirar dúvidas pelo WhatsApp"
+            className="inline-flex items-center gap-2 rounded-md bg-[#25D366] text-white px-6 py-3 text-sm font-medium hover:bg-[#20bd5a] transition-colors"
           >
-            Fale conosco
-            <ArrowUpRight className="size-4" />
+            <WhatsAppIcon className="size-4" />
+            Fale conosco no WhatsApp
           </a>
         </div>
       </div>
