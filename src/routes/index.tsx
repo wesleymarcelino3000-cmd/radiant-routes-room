@@ -488,7 +488,7 @@ function Cta() {
           </div>
           <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
             <span className="inline-flex items-center gap-2"><Mail className="size-4" /> primecode321@gmail.com</span>
-            <span className="inline-flex items-center gap-2"><Phone className="size-4" /> +55 11 9999-9999</span>
+            <a href="https://wa.me/5537920008631" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-foreground transition-colors"><Phone className="size-4" /> +55 37 92000-8631</a>
             
           </div>
         </div>
