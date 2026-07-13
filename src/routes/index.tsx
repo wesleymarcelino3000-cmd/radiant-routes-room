@@ -494,21 +494,27 @@ function Cta() {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10">
             Conte seu desafio. Em uma call de 30 minutos, mapeamos escopo, prazo e orçamento — sem compromisso.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center mb-12">
+          <div className="flex flex-wrap gap-4 justify-center mb-4">
             <a
-              href="mailto:primecode321@gmail.com"
-              className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-4 font-medium glow-primary hover:scale-[1.02] transition-transform"
+              href={waLink("Olá! Quero conversar sobre um projeto com a PrimeCode.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Falar com a PrimeCode no WhatsApp"
+              className="group inline-flex items-center gap-2 rounded-full bg-[#25D366] text-white px-7 py-4 font-medium hover:scale-[1.02] transition-transform shadow-lg shadow-[#25D366]/20"
             >
-              primecode321@gmail.com
+              <WhatsAppIcon className="size-5" />
+              Falar no WhatsApp
               <ArrowUpRight className="size-4 group-hover:rotate-45 transition-transform" />
             </a>
             <a
-              href="#portfolio"
+              href="mailto:primecode321@gmail.com"
               className="inline-flex items-center gap-2 rounded-full glass px-7 py-4 font-medium hover:bg-white/10 transition-colors"
             >
-              Agendar call
+              <Mail className="size-4" />
+              Enviar e-mail
             </a>
           </div>
+          <p className="text-xs text-muted-foreground mb-10">Atendimento rápido via WhatsApp — respondemos em minutos</p>
           <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
             <span className="inline-flex items-center gap-2"><Mail className="size-4" /> primecode321@gmail.com</span>
             <a href="https://wa.me/5537920008631" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-foreground transition-colors"><Phone className="size-4" /> +55 37 92000-8631</a>
