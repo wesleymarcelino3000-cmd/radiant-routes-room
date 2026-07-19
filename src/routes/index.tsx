@@ -556,6 +556,7 @@ const FORM_WHATSAPP_NUMBER = "5537920006976";
 
 function LeadForm() {
   const [sending, setSending] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -577,8 +578,8 @@ function LeadForm() {
 
     setSending(true);
     window.open(`https://wa.me/${FORM_WHATSAPP_NUMBER}?text=${texto}`, "_blank", "noopener,noreferrer");
-    setTimeout(() => setSending(false), 800);
     form.reset();
+    navigate({ to: "/obrigado" });
   };
 
   const inputCls =
