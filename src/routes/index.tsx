@@ -518,14 +518,14 @@ function Cta() {
             Em 30 minutos no WhatsApp você sai com clareza total do que precisa, quanto custa e em quanto tempo fica pronto. Grátis, sem enrolação e sem pressão de venda.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-4">
-            <a
-              href="#diagnostico"
+            <Link
+              to="/diagnostico"
               aria-label="Começar diagnóstico gratuito"
               className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-4 font-medium hover:scale-[1.02] transition-transform glow-primary"
             >
               Começar meu diagnóstico
               <ArrowUpRight className="size-4 group-hover:rotate-45 transition-transform" />
-            </a>
+            </Link>
 
             <a
               href="mailto:primecode321@gmail.com"
@@ -537,9 +537,7 @@ function Cta() {
           </div>
           <p className="text-xs text-muted-foreground mb-10">100% gratuito · Sem cartão · Sem compromisso</p>
 
-          <LeadForm />
-
-          <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground mt-10">
+          <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground mt-6">
             <span className="inline-flex items-center gap-2"><Mail className="size-4" /> primecode321@gmail.com</span>
             <a href="https://wa.me/5537920008631" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-foreground transition-colors"><Phone className="size-4" /> +55 37 92000-8631</a>
           </div>
@@ -548,6 +546,7 @@ function Cta() {
     </section>
   );
 }
+
 
 type DiagnosticAnswers = {
   servico: string;
