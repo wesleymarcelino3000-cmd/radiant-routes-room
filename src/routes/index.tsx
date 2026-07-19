@@ -190,14 +190,15 @@ function Nav() {
           <a href="#agencia" className="hover:text-foreground transition-colors">Agência</a>
           <a href="#contato" className="hover:text-foreground transition-colors">Contato</a>
         </div>
-        <a
-          href="#diagnostico"
+        <Link
+          to="/diagnostico"
           aria-label="Fazer diagnóstico gratuito"
           className="group inline-flex items-center gap-2 rounded-full bg-foreground text-background px-5 py-2.5 text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
         >
           <ArrowUpRight className="size-4" />
           Diagnóstico grátis
-        </a>
+        </Link>
+
 
 
       </div>
