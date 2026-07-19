@@ -1,0 +1,26 @@
+{
+  "redirects": [
+    {
+      "source": "/diagnostico",
+      "has": [
+        {
+          "type": "host",
+          "value": "primecode1.com.br"
+        }
+      ],
+      "destination": "https://diagnostico.primecode1.com.br",
+      "permanent": true
+    },
+    {
+      "source": "/diagnostico",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.primecode1.com.br"
+        }
+      ],
+      "destination": "https://diagnostico.primecode1.com.br",
+      "permanent": true
+    }
+  ]
+}
