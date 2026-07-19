@@ -596,12 +596,12 @@ function SectionHeader({
   align?: "left" | "center";
 }) {
   return (
-    <div className={`mb-16 ${align === "center" ? "text-center max-w-2xl mx-auto" : ""}`}>
-      <div className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-primary mb-4">
+    <div className={`mb-20 ${align === "center" ? "text-center max-w-2xl mx-auto" : ""}`}>
+      <div className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.22em] text-primary mb-5">
         <span className="size-1 rounded-full bg-primary" />
         {label}
       </div>
-      <h2 className="font-display font-semibold tracking-tight text-4xl md:text-5xl leading-[1.1]">{title}</h2>
+      <h2 className="font-display font-semibold tracking-[-0.02em] text-4xl md:text-5xl leading-[1.08]">{title}</h2>
     </div>
   );
 }
