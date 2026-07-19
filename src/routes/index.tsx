@@ -488,7 +488,7 @@ function Testimonials() {
   return (
     <section className="py-32 px-6 relative">
       <div className="max-w-7xl mx-auto">
-        <SectionHeader label="Clientes" title="O que dizem sobre trabalhar com a PrimeCode." />
+        <SectionHeader label="Quem já confiou" title="Empresários reais. Resultados reais." />
         <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((t) => (
             <div key={t.name} className="glass rounded-3xl p-8 flex flex-col">
