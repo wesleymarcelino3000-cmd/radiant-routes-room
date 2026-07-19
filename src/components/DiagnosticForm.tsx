@@ -166,43 +166,37 @@ export function DiagnosticForm() {
       `Urgência: ${answers.urgencia}`,
     ].join("\n");
 
-    // Tenta enviar por email (funciona quando hospedado no Lovable).
-    // Se falhar (ex.: deploy estático no Vercel), cai pro WhatsApp — nunca perde lead.
-    let emailOk = false;
+    // Envio automático por email via FormSubmit (funciona em qualquer hospedagem).
     try {
-      const res = await fetch("/api/public/lead", {
+      await fetch("https://formsubmit.co/ajax/primecode321@gmail.com", {
         method: "POST",
-        headers: { "content-type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
         body: JSON.stringify({
-          name: answers.nome.trim(),
-          email: answers.email.trim(),
-          phone: answers.telefone.trim(),
-          serviceType: `Diagnóstico — ${answers.servico}`,
-          message,
+          _subject: `Novo diagnóstico — ${answers.nome.trim()}`,
+          _template: "table",
+          _captcha: "false",
+          Nome: answers.nome.trim(),
+          Email: answers.email.trim(),
+          WhatsApp: answers.telefone.trim(),
+          Serviço: answers.servico,
+          Segmento: answers.segmento,
+          "Situação atual": answers.siteAtual,
+          "Principal dor": answers.dor,
+          "Objetivo 90 dias": answers.objetivo,
+          Orçamento: answers.orcamento,
+          Urgência: answers.urgencia,
         }),
       });
-      emailOk = res.ok;
     } catch {
-      emailOk = false;
-    }
-
-    if (!emailOk) {
-      const wpp = [
-        `*Novo diagnóstico — ${answers.nome.trim()}*`,
-        `Email: ${answers.email.trim()}`,
-        `WhatsApp: ${answers.telefone.trim()}`,
-        ``,
-        message,
-      ].join("\n");
-      window.open(
-        `https://wa.me/5537920008631?text=${encodeURIComponent(wpp)}`,
-        "_blank",
-        "noopener,noreferrer",
-      );
+      // Silencioso — usuário segue pra tela de agradecimento.
     }
 
     navigate({ to: "/obrigado" });
   };
+
 
 
   const inputCls =
