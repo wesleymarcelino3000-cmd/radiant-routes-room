@@ -319,7 +319,7 @@ function Services() {
   return (
     <section id="servicos" className="py-32 px-6 relative">
       <div className="max-w-7xl mx-auto">
-        <SectionHeader label="Serviços" title="Três pilares. Uma execução impecável." />
+        <SectionHeader label="O que fazemos por você" title="Tecnologia que trabalha enquanto você cuida do seu negócio." />
 
         <div className="grid md:grid-cols-3 gap-6">
           {services.map((s) => (
