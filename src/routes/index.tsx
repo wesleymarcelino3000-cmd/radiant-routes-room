@@ -65,32 +65,33 @@ const services = [
   {
     icon: Code2,
     tag: "01",
-    title: "Desenvolvimento Web",
-    desc: "Aplicações SPA e plataformas escaláveis com Next.js, React e arquitetura headless de alta performance.",
-    tech: ["Next.js", "React", "TypeScript", "Tailwind"],
+    title: "Sites que Convertem Visitantes em Clientes",
+    desc: "Chega de site bonito que não vende. Criamos páginas rápidas, otimizadas para Google e projetadas para transformar cada visita em oportunidade real de negócio.",
+    tech: ["Next.js", "React", "SEO", "Performance"],
   },
   {
     icon: Layers,
     tag: "02",
-    title: "Software Sob Medida",
-    desc: "Backends robustos, integrações complexas e automações que sustentam operações críticas do seu negócio.",
+    title: "Sistemas Sob Medida que Economizam Horas",
+    desc: "Automatize o que hoje consome seu dia: pedidos, estoque, agendamentos, financeiro. Um sistema pensado para o seu negócio, não um pacote genérico.",
     tech: ["Node.js", "Python", "PostgreSQL", "Cloud"],
   },
   {
     icon: Smartphone,
     tag: "03",
-    title: "Aplicativos Móveis",
-    desc: "Apps nativos e cross-platform com experiência fluida, foco em retenção e performance nativa real.",
+    title: "Aplicativos que seus Clientes Vão Usar",
+    desc: "Apps rápidos, intuitivos e feitos para gerar recorrência. Do iOS ao Android, com foco em retenção e resultado — não só download.",
     tech: ["Swift", "Kotlin", "React Native", "Flutter"],
   },
 ];
 
 const differentiators = [
-  { icon: Zap, title: "Velocidade Cirúrgica", desc: "Sprints curtos, entregas semanais. Você vê progresso real, não relatórios." },
-  { icon: ShieldCheck, title: "Engenharia Rigorosa", desc: "Código auditável, testes automatizados e segurança em cada camada." },
-  { icon: Rocket, title: "Escalável desde o dia 1", desc: "Arquitetura que aguenta 100 ou 100 milhões de usuários sem reescrita." },
-  { icon: Users, title: "Time Sênior Dedicado", desc: "Sem terceirização opaca. Você conversa direto com quem constrói." },
+  { icon: Zap, title: "Entrega no Prazo — ou Você Não Paga", desc: "Cronograma claro assinado antes de começar. Se atrasarmos por nossa culpa, o custo é nosso." },
+  { icon: ShieldCheck, title: "90 Dias de Garantia Total", desc: "Qualquer bug ou ajuste após a entrega, resolvemos sem custo. Compromisso por escrito." },
+  { icon: Rocket, title: "Pensado para Escalar com Você", desc: "Nasce preparado para 10 ou 10 mil clientes por dia. Sem retrabalho quando seu negócio crescer." },
+  { icon: Users, title: "Você Fala Direto com o Dev", desc: "Sem intermediário, sem gerente enrolando. Contato direto no WhatsApp com quem constrói." },
 ];
+
 
 const projects = [
   { img: projectFintech, tag: "Fintech", title: "Atlas Capital", desc: "Plataforma de gestão de patrimônio com dashboards em tempo real.", year: "2024" },
