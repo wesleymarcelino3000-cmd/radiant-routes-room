@@ -191,15 +191,14 @@ function Nav() {
           <a href="#contato" className="hover:text-foreground transition-colors">Contato</a>
         </div>
         <a
-          href={waLink("Olá! Quero meu diagnóstico gratuito de 30 minutos com a PrimeCode.")}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Diagnóstico gratuito no WhatsApp"
+          href="#diagnostico"
+          aria-label="Fazer diagnóstico gratuito"
           className="group inline-flex items-center gap-2 rounded-full bg-foreground text-background px-5 py-2.5 text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
         >
-          <WhatsAppIcon className="size-4" />
+          <ArrowUpRight className="size-4" />
           Diagnóstico grátis
         </a>
+
 
       </div>
     </nav>
@@ -235,16 +234,14 @@ function Hero() {
 
           <div className="flex flex-wrap gap-3 mb-6">
             <a
-              href={waLink("Olá! Quero meu diagnóstico gratuito de 30 minutos para o meu projeto.")}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Diagnóstico gratuito no WhatsApp"
+              href="#diagnostico"
+              aria-label="Fazer diagnóstico gratuito"
               className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3.5 text-sm font-medium hover:bg-primary/90 transition-all glow-primary hover:-translate-y-0.5"
             >
-              <WhatsAppIcon className="size-4" />
               Quero meu diagnóstico grátis
               <ArrowUpRight className="size-4 group-hover:rotate-45 transition-transform" />
             </a>
+
             <a
               href="#portfolio"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 px-6 py-3.5 text-sm font-medium hover:bg-card hover:border-primary/30 transition-colors"
@@ -520,16 +517,14 @@ function Cta() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-4">
             <a
-              href={waLink("Olá! Quero garantir minha vaga e fazer o diagnóstico gratuito com a PrimeCode.")}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Garantir vaga no WhatsApp"
-              className="group inline-flex items-center gap-2 rounded-full bg-[#25D366] text-white px-7 py-4 font-medium hover:scale-[1.02] transition-transform shadow-lg shadow-[#25D366]/20"
+              href="#diagnostico"
+              aria-label="Começar diagnóstico gratuito"
+              className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-4 font-medium hover:scale-[1.02] transition-transform glow-primary"
             >
-              <WhatsAppIcon className="size-5" />
-              Quero minha vaga agora
+              Começar meu diagnóstico
               <ArrowUpRight className="size-4 group-hover:rotate-45 transition-transform" />
             </a>
+
             <a
               href="mailto:primecode321@gmail.com"
               className="inline-flex items-center gap-2 rounded-full glass px-7 py-4 font-medium hover:bg-white/10 transition-colors"
@@ -741,7 +736,7 @@ function LeadForm() {
     "w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/70 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition";
 
   return (
-    <div className="max-w-2xl mx-auto text-left glass rounded-2xl p-6 md:p-10">
+    <div id="diagnostico" className="max-w-2xl mx-auto text-left glass rounded-2xl p-6 md:p-10 scroll-mt-24">
       {/* progress */}
       <div className="mb-8">
         <div className="flex items-center justify-between text-xs font-mono text-muted-foreground mb-2">
