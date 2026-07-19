@@ -518,25 +518,25 @@ function Cta() {
         <div className="relative">
           <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs text-muted-foreground mb-8">
             <span className="size-1.5 rounded-full bg-lime animate-pulse" />
-            Resposta em até 24h
+            Últimas vagas de Julho · Resposta em minutos
           </div>
           <h2 className="font-display font-semibold tracking-tight text-4xl md:text-6xl mb-6">
-            Vamos discutir seu próximo projeto.
+            Cada dia parado é dinheiro que vai para o concorrente.
           </h2>
 
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10">
-            Conte seu desafio. Em uma call de 30 minutos, mapeamos escopo, prazo e orçamento — sem compromisso.
+            Em 30 minutos no WhatsApp você sai com clareza total do que precisa, quanto custa e em quanto tempo fica pronto. Grátis, sem enrolação e sem pressão de venda.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-4">
             <a
-              href={waLink("Olá! Quero conversar sobre um projeto com a PrimeCode.")}
+              href={waLink("Olá! Quero garantir minha vaga e fazer o diagnóstico gratuito com a PrimeCode.")}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Falar com a PrimeCode no WhatsApp"
+              aria-label="Garantir vaga no WhatsApp"
               className="group inline-flex items-center gap-2 rounded-full bg-[#25D366] text-white px-7 py-4 font-medium hover:scale-[1.02] transition-transform shadow-lg shadow-[#25D366]/20"
             >
               <WhatsAppIcon className="size-5" />
-              Falar no WhatsApp
+              Quero minha vaga agora
               <ArrowUpRight className="size-4 group-hover:rotate-45 transition-transform" />
             </a>
             <a
@@ -544,10 +544,11 @@ function Cta() {
               className="inline-flex items-center gap-2 rounded-full glass px-7 py-4 font-medium hover:bg-white/10 transition-colors"
             >
               <Mail className="size-4" />
-              Enviar e-mail
+              Prefiro por e-mail
             </a>
           </div>
-          <p className="text-xs text-muted-foreground mb-10">Atendimento rápido via WhatsApp — respondemos em minutos</p>
+          <p className="text-xs text-muted-foreground mb-10">100% gratuito · Sem cartão · Sem compromisso</p>
+
           <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
             <span className="inline-flex items-center gap-2"><Mail className="size-4" /> primecode321@gmail.com</span>
             <a href="https://wa.me/5537920008631" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-foreground transition-colors"><Phone className="size-4" /> +55 37 92000-8631</a>
