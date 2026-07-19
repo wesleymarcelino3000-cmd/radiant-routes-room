@@ -351,7 +351,7 @@ function Services() {
                   aria-label={`Iniciar projeto de ${s.title} pelo WhatsApp`}
                   className="inline-flex items-center gap-2 text-sm text-primary hover:gap-3 transition-all"
                 >
-                  <WhatsAppIcon className="size-3.5" /> Iniciar projeto <ArrowUpRight className="size-4" />
+                  <WhatsAppIcon className="size-3.5" /> Quero começar agora <ArrowUpRight className="size-4" />
                 </a>
               </div>
             </article>
