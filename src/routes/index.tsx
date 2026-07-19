@@ -368,7 +368,7 @@ function WhyUs() {
       <div className="absolute inset-0 aurora-bg opacity-40" />
       <div className="relative max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
         <div>
-          <SectionHeader label="Por que PrimeCode" title="Diferenciais que aparecem no produto final." align="left" />
+          <SectionHeader label="Por que escolher a PrimeCode" title="Você já foi enganado antes. Aqui é diferente — e no papel." align="left" />
           <div className="grid sm:grid-cols-2 gap-6 mt-4">
             {differentiators.map((d) => (
               <div key={d.title} className="glass rounded-2xl p-6">
