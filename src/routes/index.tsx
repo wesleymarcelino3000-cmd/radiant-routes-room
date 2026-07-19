@@ -429,7 +429,7 @@ function Portfolio({
     <section id="portfolio" className="py-32 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16">
-          <SectionHeader label="Portfólio" title="Trabalhos em destaque." align="left" />
+          <SectionHeader label="Projetos que geram resultado" title="Veja o que já colocamos no ar." align="left" />
           <div className="flex gap-2 glass rounded-full p-1.5">
             {filters.map((f) => (
               <button
