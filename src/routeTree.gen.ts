@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as ObrigadoRouteImport } from './routes/obrigado'
+import { Route as DiagnosticoRouteImport } from './routes/diagnostico'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ApiPublicLeadRouteImport } from './routes/api/public/lead'
 import { Route as LovableEmailTransactionalPreviewRouteImport } from './routes/lovable/email/transactional/preview'
@@ -17,6 +18,11 @@ import { Route as LovableEmailTransactionalPreviewRouteImport } from './routes/l
 const ObrigadoRoute = ObrigadoRouteImport.update({
   id: '/obrigado',
   path: '/obrigado',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DiagnosticoRoute = DiagnosticoRouteImport.update({
+  id: '/diagnostico',
+  path: '/diagnostico',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -38,12 +44,14 @@ const LovableEmailTransactionalPreviewRoute =
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/diagnostico': typeof DiagnosticoRoute
   '/obrigado': typeof ObrigadoRoute
   '/api/public/lead': typeof ApiPublicLeadRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/diagnostico': typeof DiagnosticoRoute
   '/obrigado': typeof ObrigadoRoute
   '/api/public/lead': typeof ApiPublicLeadRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
@@ -51,6 +59,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/diagnostico': typeof DiagnosticoRoute
   '/obrigado': typeof ObrigadoRoute
   '/api/public/lead': typeof ApiPublicLeadRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
@@ -59,18 +68,21 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/diagnostico'
     | '/obrigado'
     | '/api/public/lead'
     | '/lovable/email/transactional/preview'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/diagnostico'
     | '/obrigado'
     | '/api/public/lead'
     | '/lovable/email/transactional/preview'
   id:
     | '__root__'
     | '/'
+    | '/diagnostico'
     | '/obrigado'
     | '/api/public/lead'
     | '/lovable/email/transactional/preview'
@@ -78,6 +90,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  DiagnosticoRoute: typeof DiagnosticoRoute
   ObrigadoRoute: typeof ObrigadoRoute
   ApiPublicLeadRoute: typeof ApiPublicLeadRoute
   LovableEmailTransactionalPreviewRoute: typeof LovableEmailTransactionalPreviewRoute
@@ -90,6 +103,13 @@ declare module '@tanstack/react-router' {
       path: '/obrigado'
       fullPath: '/obrigado'
       preLoaderRoute: typeof ObrigadoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/diagnostico': {
+      id: '/diagnostico'
+      path: '/diagnostico'
+      fullPath: '/diagnostico'
+      preLoaderRoute: typeof DiagnosticoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -118,6 +138,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  DiagnosticoRoute: DiagnosticoRoute,
   ObrigadoRoute: ObrigadoRoute,
   ApiPublicLeadRoute: ApiPublicLeadRoute,
   LovableEmailTransactionalPreviewRoute: LovableEmailTransactionalPreviewRoute,
