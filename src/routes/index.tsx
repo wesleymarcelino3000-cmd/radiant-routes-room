@@ -40,23 +40,24 @@ const WhatsAppIcon = ({ className = "size-4" }: { className?: string }) => (
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "PrimeCode — Transformando ideias em soluções digitais" },
+      { title: "PrimeCode — Sites e Sistemas que Vendem Mais Todos os Dias" },
       {
         name: "description",
         content:
-          "Construímos web, software sob medida e apps móveis com engenharia rigorosa e design cinematográfico. Transformamos ideias em produtos digitais que escalam.",
+          "Criamos sites, sistemas e apps que transformam visitantes em clientes. Diagnóstico gratuito em 30 minutos. Garantia de satisfação. Fale agora no WhatsApp.",
       },
-      { property: "og:title", content: "PrimeCode — Transformando ideias em soluções digitais" },
+      { property: "og:title", content: "PrimeCode — Sites e Sistemas que Vendem Mais Todos os Dias" },
       {
         property: "og:description",
         content:
-          "Web, software e mobile de alto padrão. Estratégia, design e engenharia sob um mesmo teto.",
+          "Do primeiro clique à venda: sites, sistemas e apps sob medida, entregues no prazo e com garantia. Diagnóstico gratuito.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),
+
   component: HomePage,
 });
 
