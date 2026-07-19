@@ -234,16 +234,14 @@ function Hero() {
 
           <div className="flex flex-wrap gap-3 mb-6">
             <a
-              href={waLink("Olá! Quero meu diagnóstico gratuito de 30 minutos para o meu projeto.")}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Diagnóstico gratuito no WhatsApp"
+              href="#diagnostico"
+              aria-label="Fazer diagnóstico gratuito"
               className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3.5 text-sm font-medium hover:bg-primary/90 transition-all glow-primary hover:-translate-y-0.5"
             >
-              <WhatsAppIcon className="size-4" />
               Quero meu diagnóstico grátis
               <ArrowUpRight className="size-4 group-hover:rotate-45 transition-transform" />
             </a>
+
             <a
               href="#portfolio"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 px-6 py-3.5 text-sm font-medium hover:bg-card hover:border-primary/30 transition-colors"
