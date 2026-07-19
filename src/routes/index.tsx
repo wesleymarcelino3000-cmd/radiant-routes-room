@@ -219,49 +219,55 @@ function Hero() {
               <span className="absolute inline-flex h-full w-full rounded-full bg-lime opacity-60 animate-ping" />
               <span className="relative inline-flex size-1.5 rounded-full bg-lime" />
             </span>
-            <span className="font-mono uppercase tracking-[0.18em]">ISO 27001</span>
+            <span className="font-mono uppercase tracking-[0.18em]">Vagas abertas em Julho</span>
             <span className="w-px h-3 bg-border" />
-            Parceiro certificado AWS
+            +120 projetos entregues
           </div>
 
           <h1 className="font-display font-semibold tracking-[-0.03em] text-[2.75rem] leading-[1.02] md:text-6xl lg:text-[4.5rem] mb-8">
-            Soluções digitais de nível corporativo para empresas que exigem{" "}
-            <span className="text-gradient">resultado mensurável</span>.
+            Seu concorrente já está vendendo online.{" "}
+            <span className="text-gradient">Está na hora de você virar o jogo.</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-12">
-            Desenvolvemos web, software sob medida e aplicativos móveis para operações de missão crítica. Governança, previsibilidade e engenharia de padrão internacional.
+            Criamos sites, sistemas e aplicativos que atraem clientes 24 horas por dia — mesmo enquanto você dorme. Sem promessa vazia: prazo por escrito, garantia de 90 dias e você fala direto com quem desenvolve.
           </p>
 
-          <div className="flex flex-wrap gap-3 mb-16">
+          <div className="flex flex-wrap gap-3 mb-6">
             <a
-              href={waLink("Olá! Gostaria de solicitar uma proposta para meu projeto.")}
+              href={waLink("Olá! Quero meu diagnóstico gratuito de 30 minutos para o meu projeto.")}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Solicitar proposta pelo WhatsApp"
+              aria-label="Diagnóstico gratuito no WhatsApp"
               className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3.5 text-sm font-medium hover:bg-primary/90 transition-all glow-primary hover:-translate-y-0.5"
             >
               <WhatsAppIcon className="size-4" />
-              Solicitar proposta
+              Quero meu diagnóstico grátis
               <ArrowUpRight className="size-4 group-hover:rotate-45 transition-transform" />
             </a>
             <a
               href="#portfolio"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 px-6 py-3.5 text-sm font-medium hover:bg-card hover:border-primary/30 transition-colors"
             >
-              Ver casos de sucesso
+              Ver resultados reais
             </a>
           </div>
 
+          <p className="text-xs text-muted-foreground mb-16 flex items-center gap-2">
+            <ShieldCheck className="size-3.5 text-lime" />
+            Sem compromisso · Resposta em minutos · 100% humano
+          </p>
+
           <div className="flex flex-wrap gap-x-10 gap-y-6">
-            <Stat value="120+" label="Projetos entregues" />
+            <Stat value="+120" label="Projetos no ar" />
             <div className="w-px bg-border self-stretch" />
-            <Stat value="8+" label="Anos de operação" />
+            <Stat value="8 anos" label="Entregando resultado" />
             <div className="w-px bg-border self-stretch" />
-            <Stat value="97%" label="Retenção de clientes" />
+            <Stat value="97%" label="Clientes que ficam" />
             <div className="w-px bg-border self-stretch" />
-            <Stat value="24/7" label="Suporte SLA" />
+            <Stat value="24h" label="Resposta garantida" />
           </div>
+
         </div>
 
         <div className="lg:col-span-5 relative animate-rise [animation-delay:200ms]">
