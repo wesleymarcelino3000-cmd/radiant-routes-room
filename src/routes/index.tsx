@@ -741,7 +741,7 @@ function LeadForm() {
     "w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/70 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition";
 
   return (
-    <div className="max-w-2xl mx-auto text-left glass rounded-2xl p-6 md:p-10">
+    <div id="diagnostico" className="max-w-2xl mx-auto text-left glass rounded-2xl p-6 md:p-10 scroll-mt-24">
       {/* progress */}
       <div className="mb-8">
         <div className="flex items-center justify-between text-xs font-mono text-muted-foreground mb-2">
