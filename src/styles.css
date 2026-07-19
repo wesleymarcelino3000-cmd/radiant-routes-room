@@ -43,33 +43,39 @@
 }
 
 :root {
-  --radius: 0.5rem;
+  --radius: 0.875rem;
 
-  /* Serious corporate: deep navy + restrained blue accent */
-  --background: oklch(0.16 0.015 250);
-  --foreground: oklch(0.97 0.005 250);
-  --card: oklch(0.20 0.018 250);
-  --card-foreground: oklch(0.97 0.005 250);
-  --popover: oklch(0.20 0.018 250);
-  --popover-foreground: oklch(0.97 0.005 250);
+  /* Premium corporate: deep slate-navy with refined azure accent */
+  --background: oklch(0.145 0.012 250);
+  --foreground: oklch(0.985 0.003 250);
+  --card: oklch(0.185 0.014 250);
+  --card-foreground: oklch(0.985 0.003 250);
+  --popover: oklch(0.185 0.014 250);
+  --popover-foreground: oklch(0.985 0.003 250);
 
-  --primary: oklch(0.62 0.14 245);         /* deep corporate blue */
-  --primary-foreground: oklch(0.98 0.005 250);
-  --secondary: oklch(0.24 0.02 250);
-  --secondary-foreground: oklch(0.97 0.005 250);
-  --muted: oklch(0.22 0.018 250);
-  --muted-foreground: oklch(0.68 0.015 250);
-  --accent: oklch(0.55 0.10 240);
-  --accent-foreground: oklch(0.98 0.005 250);
-  --destructive: oklch(0.58 0.20 25);
-  --destructive-foreground: oklch(0.98 0.005 250);
-  --border: oklch(1 0 0 / 6%);
+  --primary: oklch(0.70 0.15 238);
+  --primary-foreground: oklch(0.145 0.012 250);
+  --secondary: oklch(0.23 0.02 250);
+  --secondary-foreground: oklch(0.985 0.003 250);
+  --muted: oklch(0.21 0.016 250);
+  --muted-foreground: oklch(0.72 0.012 250);
+  --accent: oklch(0.80 0.11 210);
+  --accent-foreground: oklch(0.145 0.012 250);
+  --destructive: oklch(0.62 0.22 25);
+  --destructive-foreground: oklch(0.985 0.003 250);
+  --border: oklch(1 0 0 / 8%);
   --input: oklch(1 0 0 / 10%);
-  --ring: oklch(0.62 0.14 245);
+  --ring: oklch(0.70 0.15 238 / 60%);
 
-  --electric: oklch(0.62 0.14 245);
-  --violet: oklch(0.62 0.14 245);
-  --lime: oklch(0.72 0.14 160);
+  --electric: oklch(0.70 0.15 238);
+  --violet: oklch(0.70 0.15 238);
+  --lime: oklch(0.82 0.16 165);
+
+  --shadow-elegant: 0 20px 60px -20px oklch(0.70 0.15 238 / 0.35);
+  --shadow-card: 0 1px 0 0 oklch(1 0 0 / 0.04) inset, 0 24px 48px -28px oklch(0 0 0 / 0.7);
+  --gradient-primary: linear-gradient(135deg, oklch(0.70 0.15 238), oklch(0.80 0.11 210));
+  --gradient-surface: linear-gradient(180deg, oklch(0.205 0.016 250 / 0.75), oklch(0.16 0.014 250 / 0.35));
+  --gradient-hero: radial-gradient(80% 60% at 20% 0%, oklch(0.70 0.15 238 / 0.16), transparent 60%), radial-gradient(50% 45% at 90% 10%, oklch(0.80 0.11 210 / 0.10), transparent 65%);
 }
 
 
@@ -84,37 +90,48 @@
   }
 }
 
-/* Subtle corporate ambient background */
+/* Ambient surfaces */
 @utility aurora-bg {
   background:
-    radial-gradient(60% 45% at 20% 0%, oklch(0.62 0.14 245 / 0.14), transparent 60%),
-    radial-gradient(45% 40% at 90% 15%, oklch(0.55 0.10 240 / 0.10), transparent 65%),
+    radial-gradient(65% 50% at 15% -5%, oklch(0.70 0.15 238 / 0.16), transparent 60%),
+    radial-gradient(50% 45% at 95% 10%, oklch(0.80 0.11 210 / 0.10), transparent 65%),
+    radial-gradient(40% 40% at 50% 110%, oklch(0.70 0.15 238 / 0.08), transparent 70%),
     var(--color-background);
 }
 
 @utility grid-bg {
   background-image:
-    linear-gradient(to right, oklch(1 0 0 / 0.035) 1px, transparent 1px),
-    linear-gradient(to bottom, oklch(1 0 0 / 0.035) 1px, transparent 1px);
-  background-size: 64px 64px;
+    linear-gradient(to right, oklch(1 0 0 / 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(1 0 0 / 0.03) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);
 }
 
 @utility text-gradient {
-  background: linear-gradient(135deg, oklch(0.98 0.005 250) 0%, oklch(0.78 0.08 245) 100%);
+  background: linear-gradient(135deg, oklch(0.99 0.003 250) 0%, oklch(0.80 0.09 235) 60%, oklch(0.85 0.08 210) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 @utility glass {
-  background: linear-gradient(135deg, oklch(1 0 0 / 0.045), oklch(1 0 0 / 0.015));
-  border: 1px solid oklch(1 0 0 / 0.07);
-  backdrop-filter: blur(16px) saturate(120%);
+  background:
+    linear-gradient(135deg, oklch(1 0 0 / 0.06), oklch(1 0 0 / 0.02)),
+    var(--color-card);
+  border: 1px solid oklch(1 0 0 / 0.08);
+  backdrop-filter: blur(20px) saturate(140%);
+  box-shadow: var(--shadow-card);
 }
 
 @utility glow-primary {
-  box-shadow: 0 10px 40px -12px oklch(0.62 0.14 245 / 0.35);
+  box-shadow: var(--shadow-elegant);
 }
+
+@utility hairline {
+  background-image: linear-gradient(90deg, transparent, oklch(1 0 0 / 0.14), transparent);
+  height: 1px;
+}
+
 
 
 @keyframes float-slow {

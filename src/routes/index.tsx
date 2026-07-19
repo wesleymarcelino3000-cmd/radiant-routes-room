@@ -205,24 +205,28 @@ function Nav() {
 
 function Hero() {
   return (
-    <header className="relative aurora-bg pt-32 pb-24 md:pt-40 md:pb-28 overflow-hidden border-b border-border">
-      <div className="absolute inset-0 grid-bg opacity-50" />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background pointer-events-none" />
+    <header className="relative aurora-bg pt-36 pb-28 md:pt-44 md:pb-32 overflow-hidden">
+      <div className="absolute inset-0 grid-bg opacity-60" />
+      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-background pointer-events-none" />
 
-      <div className="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+      <div className="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-16 items-center">
         <div className="lg:col-span-7 animate-rise">
-          <div className="inline-flex items-center gap-2.5 rounded-full border border-border bg-card/50 px-3.5 py-1.5 text-xs text-muted-foreground mb-8">
-            <span className="size-1.5 rounded-full bg-lime" />
-            <span className="font-mono uppercase tracking-widest">ISO 27001</span>
+          <div className="inline-flex items-center gap-2.5 rounded-full border border-border bg-card/60 backdrop-blur px-3.5 py-1.5 text-xs text-muted-foreground mb-10">
+            <span className="relative flex size-1.5">
+              <span className="absolute inline-flex h-full w-full rounded-full bg-lime opacity-60 animate-ping" />
+              <span className="relative inline-flex size-1.5 rounded-full bg-lime" />
+            </span>
+            <span className="font-mono uppercase tracking-[0.18em]">ISO 27001</span>
             <span className="w-px h-3 bg-border" />
             Parceiro certificado AWS
           </div>
 
-          <h1 className="font-display font-semibold tracking-tight text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-8">
-            Soluções digitais de nível corporativo para empresas que exigem <span className="text-primary">resultado</span>.
+          <h1 className="font-display font-semibold tracking-[-0.03em] text-[2.75rem] leading-[1.02] md:text-6xl lg:text-[4.5rem] mb-8">
+            Soluções digitais de nível corporativo para empresas que exigem{" "}
+            <span className="text-gradient">resultado mensurável</span>.
           </h1>
 
-          <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed mb-10">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-12">
             Desenvolvemos web, software sob medida e aplicativos móveis para operações de missão crítica. Governança, previsibilidade e engenharia de padrão internacional.
           </p>
 
@@ -232,33 +236,34 @@ function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Solicitar proposta pelo WhatsApp"
-              className="inline-flex items-center gap-2 rounded-md bg-primary text-primary-foreground px-6 py-3.5 text-sm font-medium hover:bg-primary/90 transition-colors"
+              className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3.5 text-sm font-medium hover:bg-primary/90 transition-all glow-primary hover:-translate-y-0.5"
             >
               <WhatsAppIcon className="size-4" />
-              Solicitar proposta no WhatsApp
+              Solicitar proposta
+              <ArrowUpRight className="size-4 group-hover:rotate-45 transition-transform" />
             </a>
             <a
               href="#portfolio"
-              className="inline-flex items-center gap-2 rounded-md border border-border bg-card/40 px-6 py-3.5 text-sm font-medium hover:bg-card transition-colors"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 px-6 py-3.5 text-sm font-medium hover:bg-card hover:border-primary/30 transition-colors"
             >
               Ver casos de sucesso
             </a>
           </div>
 
-          <div className="flex flex-wrap gap-x-10 gap-y-4">
+          <div className="flex flex-wrap gap-x-10 gap-y-6">
             <Stat value="120+" label="Projetos entregues" />
-            <div className="w-px bg-border" />
+            <div className="w-px bg-border self-stretch" />
             <Stat value="8+" label="Anos de operação" />
-            <div className="w-px bg-border" />
+            <div className="w-px bg-border self-stretch" />
             <Stat value="97%" label="Retenção de clientes" />
-            <div className="w-px bg-border" />
+            <div className="w-px bg-border self-stretch" />
             <Stat value="24/7" label="Suporte SLA" />
           </div>
         </div>
 
         <div className="lg:col-span-5 relative animate-rise [animation-delay:200ms]">
-          <div className="absolute -inset-4 bg-gradient-to-tr from-primary/10 to-transparent blur-2xl" />
-          <div className="relative rounded-xl overflow-hidden border border-border bg-card">
+          <div className="absolute -inset-8 bg-gradient-to-tr from-primary/20 via-accent/10 to-transparent blur-3xl" />
+          <div className="relative rounded-2xl overflow-hidden border border-border/80 bg-card shadow-[0_40px_80px_-30px_rgba(0,0,0,0.7)]">
             <img
               src={heroVisual}
               alt="Infraestrutura digital corporativa"
@@ -266,6 +271,7 @@ function Hero() {
               height={1600}
               className="w-full h-auto"
             />
+            <div className="absolute inset-0 ring-1 ring-inset ring-white/5 rounded-2xl pointer-events-none" />
           </div>
         </div>
       </div>
@@ -590,12 +596,12 @@ function SectionHeader({
   align?: "left" | "center";
 }) {
   return (
-    <div className={`mb-16 ${align === "center" ? "text-center max-w-2xl mx-auto" : ""}`}>
-      <div className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-primary mb-4">
+    <div className={`mb-20 ${align === "center" ? "text-center max-w-2xl mx-auto" : ""}`}>
+      <div className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.22em] text-primary mb-5">
         <span className="size-1 rounded-full bg-primary" />
         {label}
       </div>
-      <h2 className="font-display font-semibold tracking-tight text-4xl md:text-5xl leading-[1.1]">{title}</h2>
+      <h2 className="font-display font-semibold tracking-[-0.02em] text-4xl md:text-5xl leading-[1.08]">{title}</h2>
     </div>
   );
 }
