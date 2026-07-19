@@ -591,7 +591,7 @@ function Footer() {
       </div>
       <div className="max-w-7xl mx-auto pt-8 border-t border-border flex flex-col md:flex-row justify-between gap-4 text-xs text-muted-foreground">
         <div>© 2026 PrimeCode. Todos os direitos reservados.</div>
-        <div className="font-mono uppercase tracking-widest">Engenheirado com rigor</div>
+        <div className="font-mono uppercase tracking-widest">Feito para quem quer resultado</div>
       </div>
     </footer>
   );
