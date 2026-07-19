@@ -648,7 +648,7 @@ function Faq() {
   return (
     <section id="faq" className="py-32 px-6 border-t border-border">
       <div className="max-w-4xl mx-auto">
-        <SectionHeader label="FAQ" title="Perguntas frequentes." />
+        <SectionHeader label="Antes de você decidir" title="As dúvidas que todo cliente faz — respondidas com honestidade." />
         <Accordion type="single" collapsible className="w-full">
           {faqs.map((item, i) => (
             <AccordionItem key={i} value={`item-${i}`} className="border-border">
