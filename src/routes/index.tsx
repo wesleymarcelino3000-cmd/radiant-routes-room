@@ -234,14 +234,15 @@ function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-3 mb-6">
-            <a
-              href="#diagnostico"
+            <Link
+              to="/diagnostico"
               aria-label="Fazer diagnóstico gratuito"
               className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3.5 text-sm font-medium hover:bg-primary/90 transition-all glow-primary hover:-translate-y-0.5"
             >
               Quero meu diagnóstico grátis
               <ArrowUpRight className="size-4 group-hover:rotate-45 transition-transform" />
-            </a>
+            </Link>
+
 
             <a
               href="#portfolio"
