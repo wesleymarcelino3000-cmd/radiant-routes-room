@@ -552,6 +552,87 @@ function Cta() {
   );
 }
 
+const FORM_WHATSAPP_NUMBER = "5537920006976";
+
+function LeadForm() {
+  const [sending, setSending] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    const nome = String(data.get("nome") || "").trim();
+    const email = String(data.get("email") || "").trim();
+    const telefone = String(data.get("telefone") || "").trim();
+    const servico = String(data.get("servico") || "").trim();
+    const mensagem = String(data.get("mensagem") || "").trim();
+
+    const texto =
+      `*Novo contato pelo site — PrimeCode*%0A%0A` +
+      `*Nome:* ${nome}%0A` +
+      `*E-mail:* ${email}%0A` +
+      `*Telefone:* ${telefone}%0A` +
+      `*Serviço:* ${servico}%0A` +
+      `*Mensagem:* ${mensagem}`;
+
+    setSending(true);
+    window.open(`https://wa.me/${FORM_WHATSAPP_NUMBER}?text=${texto}`, "_blank", "noopener,noreferrer");
+    setTimeout(() => setSending(false), 800);
+    form.reset();
+  };
+
+  const inputCls =
+    "w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/70 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition";
+
+  return (
+    <form
+      onSubmit={handleSubmit}
+      className="max-w-2xl mx-auto text-left glass rounded-2xl p-6 md:p-8 space-y-4"
+    >
+      <div className="grid md:grid-cols-2 gap-4">
+        <div>
+          <label className="block text-xs font-medium text-muted-foreground mb-2">Nome</label>
+          <input name="nome" required maxLength={100} placeholder="Seu nome" className={inputCls} />
+        </div>
+        <div>
+          <label className="block text-xs font-medium text-muted-foreground mb-2">E-mail</label>
+          <input name="email" type="email" required maxLength={150} placeholder="voce@email.com" className={inputCls} />
+        </div>
+        <div>
+          <label className="block text-xs font-medium text-muted-foreground mb-2">Telefone / WhatsApp</label>
+          <input name="telefone" required maxLength={30} placeholder="(37) 90000-0000" className={inputCls} />
+        </div>
+        <div>
+          <label className="block text-xs font-medium text-muted-foreground mb-2">O que você precisa?</label>
+          <select name="servico" required className={inputCls} defaultValue="">
+            <option value="" disabled>Selecione…</option>
+            <option value="Site institucional">Site institucional</option>
+            <option value="Loja virtual / E-commerce">Loja virtual / E-commerce</option>
+            <option value="Sistema web sob medida">Sistema web sob medida</option>
+            <option value="Aplicativo mobile">Aplicativo mobile</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label className="block text-xs font-medium text-muted-foreground mb-2">Conte um pouco sobre o projeto</label>
+        <textarea name="mensagem" required maxLength={1000} rows={4} placeholder="Ex.: preciso de um site para minha clínica com agendamento online…" className={inputCls} />
+      </div>
+      <button
+        type="submit"
+        disabled={sending}
+        className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] text-white px-7 py-4 font-medium hover:scale-[1.01] transition-transform shadow-lg shadow-[#25D366]/20 disabled:opacity-70"
+      >
+        <WhatsAppIcon className="size-5" />
+        {sending ? "Abrindo WhatsApp…" : "Enviar pelo WhatsApp"}
+      </button>
+      <p className="text-[11px] text-center text-muted-foreground">
+        Ao enviar, seus dados são abertos no WhatsApp para conversarmos diretamente. Nada é armazenado.
+      </p>
+    </form>
+  );
+}
+
 function Footer() {
   return (
     <footer className="border-t border-border py-16 px-6">
