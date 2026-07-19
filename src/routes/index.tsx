@@ -662,7 +662,7 @@ function Faq() {
           ))}
         </Accordion>
         <div className="mt-12 text-center">
-          <p className="text-muted-foreground mb-4">Ainda tem dúvidas?</p>
+          <p className="text-muted-foreground mb-4">Ainda tem uma dúvida específica? Pergunte agora — respondemos em minutos.</p>
           <a
             href={waLink("Olá! Tenho uma dúvida sobre os serviços da PrimeCode.")}
             target="_blank"
