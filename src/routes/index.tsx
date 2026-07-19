@@ -191,15 +191,14 @@ function Nav() {
           <a href="#contato" className="hover:text-foreground transition-colors">Contato</a>
         </div>
         <a
-          href={waLink("Olá! Quero meu diagnóstico gratuito de 30 minutos com a PrimeCode.")}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Diagnóstico gratuito no WhatsApp"
+          href="#diagnostico"
+          aria-label="Fazer diagnóstico gratuito"
           className="group inline-flex items-center gap-2 rounded-full bg-foreground text-background px-5 py-2.5 text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
         >
-          <WhatsAppIcon className="size-4" />
+          <ArrowUpRight className="size-4" />
           Diagnóstico grátis
         </a>
+
 
       </div>
     </nav>
