@@ -166,6 +166,9 @@ export function DiagnosticForm() {
       `Urgência: ${answers.urgencia}`,
     ].join("\n");
 
+    // Tenta enviar por email (funciona quando hospedado no Lovable).
+    // Se falhar (ex.: deploy estático no Vercel), cai pro WhatsApp — nunca perde lead.
+    let emailOk = false;
     try {
       const res = await fetch("/api/public/lead", {
         method: "POST",
@@ -178,14 +181,29 @@ export function DiagnosticForm() {
           message,
         }),
       });
-      if (!res.ok) throw new Error("send_failed");
-      navigate({ to: "/obrigado" });
-    } catch (err) {
-      console.error(err);
-      alert("Não conseguimos enviar seu diagnóstico agora. Tente novamente em instantes.");
-      setSending(false);
+      emailOk = res.ok;
+    } catch {
+      emailOk = false;
     }
+
+    if (!emailOk) {
+      const wpp = [
+        `*Novo diagnóstico — ${answers.nome.trim()}*`,
+        `Email: ${answers.email.trim()}`,
+        `WhatsApp: ${answers.telefone.trim()}`,
+        ``,
+        message,
+      ].join("\n");
+      window.open(
+        `https://wa.me/5537920008631?text=${encodeURIComponent(wpp)}`,
+        "_blank",
+        "noopener,noreferrer",
+      );
+    }
+
+    navigate({ to: "/obrigado" });
   };
+
 
   const inputCls =
     "w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/70 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition";
