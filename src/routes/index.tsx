@@ -558,29 +558,35 @@ function LeadForm() {
   const [sending, setSending] = useState(false);
   const navigate = useNavigate();
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
-    const nome = String(data.get("nome") || "").trim();
-    const email = String(data.get("email") || "").trim();
-    const telefone = String(data.get("telefone") || "").trim();
-    const servico = String(data.get("servico") || "").trim();
-    const mensagem = String(data.get("mensagem") || "").trim();
-
-    const texto =
-      `*Novo contato pelo site — PrimeCode*%0A%0A` +
-      `*Nome:* ${nome}%0A` +
-      `*E-mail:* ${email}%0A` +
-      `*Telefone:* ${telefone}%0A` +
-      `*Serviço:* ${servico}%0A` +
-      `*Mensagem:* ${mensagem}`;
+    const payload = {
+      name: String(data.get("nome") || "").trim(),
+      email: String(data.get("email") || "").trim(),
+      phone: String(data.get("telefone") || "").trim(),
+      serviceType: String(data.get("servico") || "").trim(),
+      message: String(data.get("mensagem") || "").trim(),
+    };
 
     setSending(true);
-    window.open(`https://wa.me/${FORM_WHATSAPP_NUMBER}?text=${texto}`, "_blank", "noopener,noreferrer");
-    form.reset();
-    navigate({ to: "/obrigado" });
+    try {
+      const res = await fetch("/api/public/lead", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) throw new Error("send_failed");
+      form.reset();
+      navigate({ to: "/obrigado" });
+    } catch (err) {
+      console.error(err);
+      alert("Não conseguimos enviar sua mensagem agora. Tente novamente em instantes.");
+      setSending(false);
+    }
   };
+
 
   const inputCls =
     "w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/70 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition";
