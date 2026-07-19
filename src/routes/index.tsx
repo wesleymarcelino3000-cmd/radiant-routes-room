@@ -383,13 +383,14 @@ function WhyUs() {
         </div>
         <div className="relative">
           <div className="glass rounded-3xl p-8">
-            <div className="font-mono text-xs text-muted-foreground mb-6">// nosso processo</div>
+            <div className="font-mono text-xs text-muted-foreground mb-6">// como trabalhamos com você</div>
             <ol className="space-y-6">
               {[
-                { n: "01", t: "Descoberta", d: "Imersão no negócio, KPIs e restrições técnicas." },
-                { n: "02", t: "Estratégia & Design", d: "Wireframes, protótipos e sistema de design proprietário." },
-                { n: "03", t: "Engenharia", d: "Sprints semanais com entregas em ambiente de staging." },
-                { n: "04", t: "Lançamento & Evolução", d: "Deploy, monitoramento e evolução contínua pós-launch." },
+                { n: "01", t: "Conversa gratuita de 30min", d: "Você conta o problema. Nós escutamos e mapeamos a solução — sem custo, sem compromisso." },
+                { n: "02", t: "Proposta clara em 48h", d: "Escopo, prazo e investimento no papel. Nada de surpresa depois." },
+                { n: "03", t: "Você acompanha semana a semana", d: "Toda sexta você vê o que foi feito. Ajustamos com você antes de continuar." },
+                { n: "04", t: "Entrega + garantia de 90 dias", d: "No ar no prazo. Qualquer ajuste nos 3 meses seguintes: por nossa conta." },
+
               ].map((step) => (
                 <li key={step.n} className="flex gap-5 pb-6 last:pb-0 border-b border-border last:border-0">
                   <div className="font-display text-primary text-xl font-bold shrink-0">{step.n}</div>
