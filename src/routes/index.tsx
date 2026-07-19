@@ -569,7 +569,7 @@ function Footer() {
             <img src={primecodeLogo} alt="PrimeCode" className="h-14 w-auto" />
           </div>
           <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
-            Transformando ideias em soluções digitais. Web, software e apps móveis com engenharia rigorosa e design de padrão internacional.
+            Sites, sistemas e apps sob medida para empresas que querem vender mais e trabalhar menos. Prazo por escrito, garantia de 90 dias e você fala direto com quem constrói.
           </p>
         </div>
         <div>
