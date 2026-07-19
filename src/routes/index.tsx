@@ -540,10 +540,11 @@ function Cta() {
           </div>
           <p className="text-xs text-muted-foreground mb-10">100% gratuito · Sem cartão · Sem compromisso</p>
 
-          <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
+          <LeadForm />
+
+          <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground mt-10">
             <span className="inline-flex items-center gap-2"><Mail className="size-4" /> primecode321@gmail.com</span>
             <a href="https://wa.me/5537920008631" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-foreground transition-colors"><Phone className="size-4" /> +55 37 92000-8631</a>
-            
           </div>
         </div>
       </div>
