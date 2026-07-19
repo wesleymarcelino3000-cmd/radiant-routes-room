@@ -517,16 +517,14 @@ function Cta() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-4">
             <a
-              href={waLink("Olá! Quero garantir minha vaga e fazer o diagnóstico gratuito com a PrimeCode.")}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Garantir vaga no WhatsApp"
-              className="group inline-flex items-center gap-2 rounded-full bg-[#25D366] text-white px-7 py-4 font-medium hover:scale-[1.02] transition-transform shadow-lg shadow-[#25D366]/20"
+              href="#diagnostico"
+              aria-label="Começar diagnóstico gratuito"
+              className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-4 font-medium hover:scale-[1.02] transition-transform glow-primary"
             >
-              <WhatsAppIcon className="size-5" />
-              Quero minha vaga agora
+              Começar meu diagnóstico
               <ArrowUpRight className="size-4 group-hover:rotate-45 transition-transform" />
             </a>
+
             <a
               href="mailto:primecode321@gmail.com"
               className="inline-flex items-center gap-2 rounded-full glass px-7 py-4 font-medium hover:bg-white/10 transition-colors"
