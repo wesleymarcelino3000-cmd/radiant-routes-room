@@ -40,23 +40,24 @@ const WhatsAppIcon = ({ className = "size-4" }: { className?: string }) => (
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "PrimeCode — Transformando ideias em soluções digitais" },
+      { title: "PrimeCode — Sites e Sistemas que Vendem Mais Todos os Dias" },
       {
         name: "description",
         content:
-          "Construímos web, software sob medida e apps móveis com engenharia rigorosa e design cinematográfico. Transformamos ideias em produtos digitais que escalam.",
+          "Criamos sites, sistemas e apps que transformam visitantes em clientes. Diagnóstico gratuito em 30 minutos. Garantia de satisfação. Fale agora no WhatsApp.",
       },
-      { property: "og:title", content: "PrimeCode — Transformando ideias em soluções digitais" },
+      { property: "og:title", content: "PrimeCode — Sites e Sistemas que Vendem Mais Todos os Dias" },
       {
         property: "og:description",
         content:
-          "Web, software e mobile de alto padrão. Estratégia, design e engenharia sob um mesmo teto.",
+          "Do primeiro clique à venda: sites, sistemas e apps sob medida, entregues no prazo e com garantia. Diagnóstico gratuito.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),
+
   component: HomePage,
 });
 
@@ -64,32 +65,33 @@ const services = [
   {
     icon: Code2,
     tag: "01",
-    title: "Desenvolvimento Web",
-    desc: "Aplicações SPA e plataformas escaláveis com Next.js, React e arquitetura headless de alta performance.",
-    tech: ["Next.js", "React", "TypeScript", "Tailwind"],
+    title: "Sites que Convertem Visitantes em Clientes",
+    desc: "Chega de site bonito que não vende. Criamos páginas rápidas, otimizadas para Google e projetadas para transformar cada visita em oportunidade real de negócio.",
+    tech: ["Next.js", "React", "SEO", "Performance"],
   },
   {
     icon: Layers,
     tag: "02",
-    title: "Software Sob Medida",
-    desc: "Backends robustos, integrações complexas e automações que sustentam operações críticas do seu negócio.",
+    title: "Sistemas Sob Medida que Economizam Horas",
+    desc: "Automatize o que hoje consome seu dia: pedidos, estoque, agendamentos, financeiro. Um sistema pensado para o seu negócio, não um pacote genérico.",
     tech: ["Node.js", "Python", "PostgreSQL", "Cloud"],
   },
   {
     icon: Smartphone,
     tag: "03",
-    title: "Aplicativos Móveis",
-    desc: "Apps nativos e cross-platform com experiência fluida, foco em retenção e performance nativa real.",
+    title: "Aplicativos que seus Clientes Vão Usar",
+    desc: "Apps rápidos, intuitivos e feitos para gerar recorrência. Do iOS ao Android, com foco em retenção e resultado — não só download.",
     tech: ["Swift", "Kotlin", "React Native", "Flutter"],
   },
 ];
 
 const differentiators = [
-  { icon: Zap, title: "Velocidade Cirúrgica", desc: "Sprints curtos, entregas semanais. Você vê progresso real, não relatórios." },
-  { icon: ShieldCheck, title: "Engenharia Rigorosa", desc: "Código auditável, testes automatizados e segurança em cada camada." },
-  { icon: Rocket, title: "Escalável desde o dia 1", desc: "Arquitetura que aguenta 100 ou 100 milhões de usuários sem reescrita." },
-  { icon: Users, title: "Time Sênior Dedicado", desc: "Sem terceirização opaca. Você conversa direto com quem constrói." },
+  { icon: Zap, title: "Entrega no Prazo — ou Você Não Paga", desc: "Cronograma claro assinado antes de começar. Se atrasarmos por nossa culpa, o custo é nosso." },
+  { icon: ShieldCheck, title: "90 Dias de Garantia Total", desc: "Qualquer bug ou ajuste após a entrega, resolvemos sem custo. Compromisso por escrito." },
+  { icon: Rocket, title: "Pensado para Escalar com Você", desc: "Nasce preparado para 10 ou 10 mil clientes por dia. Sem retrabalho quando seu negócio crescer." },
+  { icon: Users, title: "Você Fala Direto com o Dev", desc: "Sem intermediário, sem gerente enrolando. Contato direto no WhatsApp com quem constrói." },
 ];
+
 
 const projects = [
   { img: projectFintech, tag: "Fintech", title: "Atlas Capital", desc: "Plataforma de gestão de patrimônio com dashboards em tempo real.", year: "2024" },
@@ -189,15 +191,16 @@ function Nav() {
           <a href="#contato" className="hover:text-foreground transition-colors">Contato</a>
         </div>
         <a
-          href={waLink("Olá! Gostaria de solicitar um orçamento com a PrimeCode.")}
+          href={waLink("Olá! Quero meu diagnóstico gratuito de 30 minutos com a PrimeCode.")}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Solicitar orçamento pelo WhatsApp"
+          aria-label="Diagnóstico gratuito no WhatsApp"
           className="group inline-flex items-center gap-2 rounded-full bg-foreground text-background px-5 py-2.5 text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
         >
           <WhatsAppIcon className="size-4" />
-          Orçamento
+          Diagnóstico grátis
         </a>
+
       </div>
     </nav>
   );
@@ -216,49 +219,55 @@ function Hero() {
               <span className="absolute inline-flex h-full w-full rounded-full bg-lime opacity-60 animate-ping" />
               <span className="relative inline-flex size-1.5 rounded-full bg-lime" />
             </span>
-            <span className="font-mono uppercase tracking-[0.18em]">ISO 27001</span>
+            <span className="font-mono uppercase tracking-[0.18em]">Vagas abertas em Julho</span>
             <span className="w-px h-3 bg-border" />
-            Parceiro certificado AWS
+            +120 projetos entregues
           </div>
 
           <h1 className="font-display font-semibold tracking-[-0.03em] text-[2.75rem] leading-[1.02] md:text-6xl lg:text-[4.5rem] mb-8">
-            Soluções digitais de nível corporativo para empresas que exigem{" "}
-            <span className="text-gradient">resultado mensurável</span>.
+            Seu concorrente já está vendendo online.{" "}
+            <span className="text-gradient">Está na hora de você virar o jogo.</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-12">
-            Desenvolvemos web, software sob medida e aplicativos móveis para operações de missão crítica. Governança, previsibilidade e engenharia de padrão internacional.
+            Criamos sites, sistemas e aplicativos que atraem clientes 24 horas por dia — mesmo enquanto você dorme. Sem promessa vazia: prazo por escrito, garantia de 90 dias e você fala direto com quem desenvolve.
           </p>
 
-          <div className="flex flex-wrap gap-3 mb-16">
+          <div className="flex flex-wrap gap-3 mb-6">
             <a
-              href={waLink("Olá! Gostaria de solicitar uma proposta para meu projeto.")}
+              href={waLink("Olá! Quero meu diagnóstico gratuito de 30 minutos para o meu projeto.")}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Solicitar proposta pelo WhatsApp"
+              aria-label="Diagnóstico gratuito no WhatsApp"
               className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3.5 text-sm font-medium hover:bg-primary/90 transition-all glow-primary hover:-translate-y-0.5"
             >
               <WhatsAppIcon className="size-4" />
-              Solicitar proposta
+              Quero meu diagnóstico grátis
               <ArrowUpRight className="size-4 group-hover:rotate-45 transition-transform" />
             </a>
             <a
               href="#portfolio"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 px-6 py-3.5 text-sm font-medium hover:bg-card hover:border-primary/30 transition-colors"
             >
-              Ver casos de sucesso
+              Ver resultados reais
             </a>
           </div>
 
+          <p className="text-xs text-muted-foreground mb-16 flex items-center gap-2">
+            <ShieldCheck className="size-3.5 text-lime" />
+            Sem compromisso · Resposta em minutos · 100% humano
+          </p>
+
           <div className="flex flex-wrap gap-x-10 gap-y-6">
-            <Stat value="120+" label="Projetos entregues" />
+            <Stat value="+120" label="Projetos no ar" />
             <div className="w-px bg-border self-stretch" />
-            <Stat value="8+" label="Anos de operação" />
+            <Stat value="8 anos" label="Entregando resultado" />
             <div className="w-px bg-border self-stretch" />
-            <Stat value="97%" label="Retenção de clientes" />
+            <Stat value="97%" label="Clientes que ficam" />
             <div className="w-px bg-border self-stretch" />
-            <Stat value="24/7" label="Suporte SLA" />
+            <Stat value="24h" label="Resposta garantida" />
           </div>
+
         </div>
 
         <div className="lg:col-span-5 relative animate-rise [animation-delay:200ms]">
@@ -310,7 +319,7 @@ function Services() {
   return (
     <section id="servicos" className="py-32 px-6 relative">
       <div className="max-w-7xl mx-auto">
-        <SectionHeader label="Serviços" title="Três pilares. Uma execução impecável." />
+        <SectionHeader label="O que fazemos por você" title="Tecnologia que trabalha enquanto você cuida do seu negócio." />
 
         <div className="grid md:grid-cols-3 gap-6">
           {services.map((s) => (
@@ -342,7 +351,7 @@ function Services() {
                   aria-label={`Iniciar projeto de ${s.title} pelo WhatsApp`}
                   className="inline-flex items-center gap-2 text-sm text-primary hover:gap-3 transition-all"
                 >
-                  <WhatsAppIcon className="size-3.5" /> Iniciar projeto <ArrowUpRight className="size-4" />
+                  <WhatsAppIcon className="size-3.5" /> Quero começar agora <ArrowUpRight className="size-4" />
                 </a>
               </div>
             </article>
@@ -359,7 +368,7 @@ function WhyUs() {
       <div className="absolute inset-0 aurora-bg opacity-40" />
       <div className="relative max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
         <div>
-          <SectionHeader label="Por que PrimeCode" title="Diferenciais que aparecem no produto final." align="left" />
+          <SectionHeader label="Por que escolher a PrimeCode" title="Você já foi enganado antes. Aqui é diferente — e no papel." align="left" />
           <div className="grid sm:grid-cols-2 gap-6 mt-4">
             {differentiators.map((d) => (
               <div key={d.title} className="glass rounded-2xl p-6">
@@ -374,13 +383,14 @@ function WhyUs() {
         </div>
         <div className="relative">
           <div className="glass rounded-3xl p-8">
-            <div className="font-mono text-xs text-muted-foreground mb-6">// nosso processo</div>
+            <div className="font-mono text-xs text-muted-foreground mb-6">// como trabalhamos com você</div>
             <ol className="space-y-6">
               {[
-                { n: "01", t: "Descoberta", d: "Imersão no negócio, KPIs e restrições técnicas." },
-                { n: "02", t: "Estratégia & Design", d: "Wireframes, protótipos e sistema de design proprietário." },
-                { n: "03", t: "Engenharia", d: "Sprints semanais com entregas em ambiente de staging." },
-                { n: "04", t: "Lançamento & Evolução", d: "Deploy, monitoramento e evolução contínua pós-launch." },
+                { n: "01", t: "Conversa gratuita de 30min", d: "Você conta o problema. Nós escutamos e mapeamos a solução — sem custo, sem compromisso." },
+                { n: "02", t: "Proposta clara em 48h", d: "Escopo, prazo e investimento no papel. Nada de surpresa depois." },
+                { n: "03", t: "Você acompanha semana a semana", d: "Toda sexta você vê o que foi feito. Ajustamos com você antes de continuar." },
+                { n: "04", t: "Entrega + garantia de 90 dias", d: "No ar no prazo. Qualquer ajuste nos 3 meses seguintes: por nossa conta." },
+
               ].map((step) => (
                 <li key={step.n} className="flex gap-5 pb-6 last:pb-0 border-b border-border last:border-0">
                   <div className="font-display text-primary text-xl font-bold shrink-0">{step.n}</div>
@@ -419,7 +429,7 @@ function Portfolio({
     <section id="portfolio" className="py-32 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16">
-          <SectionHeader label="Portfólio" title="Trabalhos em destaque." align="left" />
+          <SectionHeader label="Projetos que geram resultado" title="Veja o que já colocamos no ar." align="left" />
           <div className="flex gap-2 glass rounded-full p-1.5">
             {filters.map((f) => (
               <button
@@ -478,7 +488,7 @@ function Testimonials() {
   return (
     <section className="py-32 px-6 relative">
       <div className="max-w-7xl mx-auto">
-        <SectionHeader label="Clientes" title="O que dizem sobre trabalhar com a PrimeCode." />
+        <SectionHeader label="Quem já confiou" title="Empresários reais. Resultados reais." />
         <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((t) => (
             <div key={t.name} className="glass rounded-3xl p-8 flex flex-col">
@@ -508,25 +518,25 @@ function Cta() {
         <div className="relative">
           <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs text-muted-foreground mb-8">
             <span className="size-1.5 rounded-full bg-lime animate-pulse" />
-            Resposta em até 24h
+            Últimas vagas de Julho · Resposta em minutos
           </div>
           <h2 className="font-display font-semibold tracking-tight text-4xl md:text-6xl mb-6">
-            Vamos discutir seu próximo projeto.
+            Cada dia parado é dinheiro que vai para o concorrente.
           </h2>
 
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10">
-            Conte seu desafio. Em uma call de 30 minutos, mapeamos escopo, prazo e orçamento — sem compromisso.
+            Em 30 minutos no WhatsApp você sai com clareza total do que precisa, quanto custa e em quanto tempo fica pronto. Grátis, sem enrolação e sem pressão de venda.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-4">
             <a
-              href={waLink("Olá! Quero conversar sobre um projeto com a PrimeCode.")}
+              href={waLink("Olá! Quero garantir minha vaga e fazer o diagnóstico gratuito com a PrimeCode.")}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Falar com a PrimeCode no WhatsApp"
+              aria-label="Garantir vaga no WhatsApp"
               className="group inline-flex items-center gap-2 rounded-full bg-[#25D366] text-white px-7 py-4 font-medium hover:scale-[1.02] transition-transform shadow-lg shadow-[#25D366]/20"
             >
               <WhatsAppIcon className="size-5" />
-              Falar no WhatsApp
+              Quero minha vaga agora
               <ArrowUpRight className="size-4 group-hover:rotate-45 transition-transform" />
             </a>
             <a
@@ -534,10 +544,11 @@ function Cta() {
               className="inline-flex items-center gap-2 rounded-full glass px-7 py-4 font-medium hover:bg-white/10 transition-colors"
             >
               <Mail className="size-4" />
-              Enviar e-mail
+              Prefiro por e-mail
             </a>
           </div>
-          <p className="text-xs text-muted-foreground mb-10">Atendimento rápido via WhatsApp — respondemos em minutos</p>
+          <p className="text-xs text-muted-foreground mb-10">100% gratuito · Sem cartão · Sem compromisso</p>
+
           <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
             <span className="inline-flex items-center gap-2"><Mail className="size-4" /> primecode321@gmail.com</span>
             <a href="https://wa.me/5537920008631" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-foreground transition-colors"><Phone className="size-4" /> +55 37 92000-8631</a>
@@ -558,7 +569,7 @@ function Footer() {
             <img src={primecodeLogo} alt="PrimeCode" className="h-14 w-auto" />
           </div>
           <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
-            Transformando ideias em soluções digitais. Web, software e apps móveis com engenharia rigorosa e design de padrão internacional.
+            Sites, sistemas e apps sob medida para empresas que querem vender mais e trabalhar menos. Prazo por escrito, garantia de 90 dias e você fala direto com quem constrói.
           </p>
         </div>
         <div>
@@ -580,7 +591,7 @@ function Footer() {
       </div>
       <div className="max-w-7xl mx-auto pt-8 border-t border-border flex flex-col md:flex-row justify-between gap-4 text-xs text-muted-foreground">
         <div>© 2026 PrimeCode. Todos os direitos reservados.</div>
-        <div className="font-mono uppercase tracking-widest">Engenheirado com rigor</div>
+        <div className="font-mono uppercase tracking-widest">Feito para quem quer resultado</div>
       </div>
     </footer>
   );
@@ -637,7 +648,7 @@ function Faq() {
   return (
     <section id="faq" className="py-32 px-6 border-t border-border">
       <div className="max-w-4xl mx-auto">
-        <SectionHeader label="FAQ" title="Perguntas frequentes." />
+        <SectionHeader label="Antes de você decidir" title="As dúvidas que todo cliente faz — respondidas com honestidade." />
         <Accordion type="single" collapsible className="w-full">
           {faqs.map((item, i) => (
             <AccordionItem key={i} value={`item-${i}`} className="border-border">
@@ -651,7 +662,7 @@ function Faq() {
           ))}
         </Accordion>
         <div className="mt-12 text-center">
-          <p className="text-muted-foreground mb-4">Ainda tem dúvidas?</p>
+          <p className="text-muted-foreground mb-4">Ainda tem uma dúvida específica? Pergunte agora — respondemos em minutos.</p>
           <a
             href={waLink("Olá! Tenho uma dúvida sobre os serviços da PrimeCode.")}
             target="_blank"
