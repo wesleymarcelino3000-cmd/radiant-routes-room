@@ -258,15 +258,6 @@ function Hero() {
             Sem compromisso · Resposta em minutos · 100% humano
           </p>
 
-          <div className="flex flex-wrap gap-x-10 gap-y-6">
-            <Stat value="+120" label="Projetos no ar" />
-            <div className="w-px bg-border self-stretch" />
-            <Stat value="8 anos" label="Entregando resultado" />
-            <div className="w-px bg-border self-stretch" />
-            <Stat value="97%" label="Clientes que ficam" />
-            <div className="w-px bg-border self-stretch" />
-            <Stat value="24h" label="Resposta garantida" />
-          </div>
 
         </div>
 
