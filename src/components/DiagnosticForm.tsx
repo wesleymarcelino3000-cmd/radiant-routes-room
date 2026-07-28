@@ -200,18 +200,20 @@ export function DiagnosticForm() {
 
 
   const inputCls =
-    "w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/70 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition";
+    "w-full rounded-xl bg-background/60 border border-border px-4 py-3.5 text-sm text-foreground placeholder:text-muted-foreground/70 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition";
 
   return (
-    <div className="max-w-2xl mx-auto text-left glass rounded-2xl p-6 md:p-10">
+    <div className="mx-auto max-w-2xl rounded-[26px] border border-border bg-card/70 p-6 text-left backdrop-blur-xl md:p-10 shadow-[0_30px_80px_-40px_oklch(0_0_0/0.7)]">
       <div className="mb-8">
-        <div className="flex items-center justify-between text-xs font-mono text-muted-foreground mb-2">
+        <div className="mb-2 flex items-center justify-between font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
           <span>Diagnóstico gratuito</span>
-          <span>{step + 1} / {total}</span>
+          <span className="text-foreground">
+            {String(step + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
+          </span>
         </div>
-        <div className="h-1.5 rounded-full bg-white/5 overflow-hidden">
+        <div className="h-1.5 overflow-hidden rounded-full bg-foreground/5">
           <div
-            className="h-full bg-gradient-to-r from-primary to-accent transition-all duration-500 ease-out"
+            className="h-full rounded-full bg-linear-to-r from-primary to-accent transition-all duration-500 ease-out"
             style={{ width: `${progress}%` }}
           />
         </div>
