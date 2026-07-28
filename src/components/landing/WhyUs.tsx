@@ -12,7 +12,7 @@ export function WhyUs() {
       <div aria-hidden="true" className="dot-bg-paper absolute inset-0 opacity-70" />
 
       <div className="relative mx-auto max-w-7xl px-5 py-16 sm:px-6 md:py-32">
-        <div className="grid gap-14 lg:grid-cols-12">
+        <div className="grid gap-10 md:gap-14 lg:grid-cols-12">
           {/* Sticky intro */}
           <div className="lg:col-span-5">
             <div className="lg:sticky lg:top-28">
@@ -96,8 +96,8 @@ export function WhyUs() {
 
         {/* Editorial pull-quote */}
         <Reveal delay={120}>
-          <figure className="mx-auto mt-24 max-w-4xl text-center md:mt-32">
-            <blockquote className="serif-it text-3xl leading-[1.25] text-paper-foreground/90 md:text-[2.6rem]">
+          <figure className="mx-auto mt-16 max-w-4xl text-center md:mt-32">
+            <blockquote className="serif-it text-2xl leading-[1.25] text-paper-foreground/90 sm:text-3xl md:text-[2.6rem]">
               "Tecnologia boa é aquela que some — você nem percebe que ela está{" "}
               <span className="text-primary-ink">trabalhando por você</span>."
             </blockquote>

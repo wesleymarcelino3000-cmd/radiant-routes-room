@@ -6,7 +6,7 @@ import { Reveal, SectionLabel } from "./Reveal";
 export function Faq() {
   return (
     <section id="faq" aria-labelledby="faq-title" className="relative border-t border-border">
-      <div className="mx-auto grid max-w-7xl gap-16 px-6 py-24 md:py-32 lg:grid-cols-12">
+      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-6 md:gap-16 md:py-32 lg:grid-cols-12">
         <div className="lg:col-span-5">
           <div className="lg:sticky lg:top-28">
             <Reveal>
