@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, ShieldCheck, Clock, Lock } from "lucide-react";
 import { DiagnosticForm } from "@/components/DiagnosticForm";
-import primecodeLogo from "@/assets/primecode-logo.png";
+import spaceAdsLogo from "@/assets/space-ads-logo.png.asset.json";
 
 export const Route = createFileRoute("/diagnostico")({
   head: () => ({
@@ -29,8 +29,8 @@ function DiagnosticoPage() {
       <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
       <div className="relative max-w-3xl mx-auto px-6 py-10 md:py-16">
         <div className="flex items-center justify-between mb-10">
-          <Link to="/" className="flex items-center" aria-label="PrimeCode — voltar ao site">
-            <img src={primecodeLogo} alt="PrimeCode" className="h-10 w-auto md:h-12" />
+          <Link to="/" className="flex items-center" aria-label="Space Ads — voltar ao site">
+            <img src={spaceAdsLogo.url} alt="Space Ads" className="h-10 w-auto md:h-12" />
           </Link>
           <Link
             to="/"

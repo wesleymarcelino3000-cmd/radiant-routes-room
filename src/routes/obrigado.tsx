@@ -1,7 +1,7 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { CheckCircle2, ArrowLeft } from "lucide-react";
 import { useEffect, useState } from "react";
-import primecodeLogo from "@/assets/primecode-logo.png";
+import spaceAdsLogo from "@/assets/space-ads-logo.png.asset.json";
 
 export const Route = createFileRoute("/obrigado")({
   head: () => ({
@@ -35,7 +35,7 @@ function ThankYouPage() {
       <div className="absolute inset-0 grid-bg opacity-20" />
 
       <div className="relative max-w-xl w-full glass rounded-3xl p-10 md:p-14 text-center shadow-elegant">
-        <img src={primecodeLogo} alt="PrimeCode" className="h-16 w-auto mx-auto mb-8" />
+        <img src={spaceAdsLogo.url} alt="Space Ads" className="h-16 w-auto mx-auto mb-8" />
 
         <div className="inline-flex items-center justify-center size-16 rounded-full bg-[#25D366]/15 text-[#25D366] mx-auto mb-6">
           <CheckCircle2 className="size-9" />

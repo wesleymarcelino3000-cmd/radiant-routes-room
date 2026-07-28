@@ -4,7 +4,7 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 
 import { navLinks } from "./data";
 import { cn } from "@/lib/utils";
-import primecodeLogo from "@/assets/primecode-logo.png";
+import spaceAdsLogo from "@/assets/space-ads-logo.png.asset.json";
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -41,8 +41,8 @@ export function Nav() {
         aria-label="Navegação principal"
         className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4"
       >
-        <a href="#top" className="flex items-center" aria-label="PrimeCode — voltar ao topo">
-          <img src={primecodeLogo} alt="PrimeCode" className="h-9 w-auto md:h-10" />
+        <a href="#top" className="flex items-center" aria-label="Space Ads — voltar ao topo">
+          <img src={spaceAdsLogo.url} alt="Space Ads" className="h-9 w-auto md:h-10" />
         </a>
 
         <ul className="hidden items-center gap-8 text-sm text-muted-foreground lg:flex">
