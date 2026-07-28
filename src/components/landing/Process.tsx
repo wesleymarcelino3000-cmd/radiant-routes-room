@@ -9,8 +9,8 @@ export function Process() {
     <section id="processo" aria-labelledby="processo-title" className="relative overflow-hidden">
       <div aria-hidden="true" className="dot-bg absolute inset-0 opacity-40" />
 
-      <div className="relative mx-auto max-w-7xl px-6 py-24 md:py-32">
-        <div className="grid gap-16 lg:grid-cols-12">
+      <div className="relative mx-auto max-w-7xl px-5 py-16 sm:px-6 md:py-32">
+        <div className="grid gap-10 md:gap-16 lg:grid-cols-12">
           {/* Sticky header */}
           <div className="lg:col-span-5">
             <div className="lg:sticky lg:top-28">

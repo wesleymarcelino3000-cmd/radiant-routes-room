@@ -8,7 +8,7 @@ import primecodeLogo from "@/assets/primecode-logo.png";
 
 export function CtaBlock() {
   return (
-    <section id="contato" aria-labelledby="cta-title" className="relative px-6 py-24 md:py-32">
+    <section id="contato" aria-labelledby="cta-title" className="relative px-5 py-16 sm:px-6 md:py-32">
       <div className="relative mx-auto max-w-6xl overflow-hidden rounded-[36px] border border-border bg-card">
         <div aria-hidden="true" className="aurora-bg absolute inset-0 opacity-90" />
         <div aria-hidden="true" className="grid-bg absolute inset-0 opacity-40" />
@@ -17,7 +17,7 @@ export function CtaBlock() {
           className="animate-drift absolute -top-24 -right-24 size-80 rounded-full bg-primary/20 blur-3xl"
         />
 
-        <div className="relative grid gap-12 p-10 md:grid-cols-12 md:p-16 lg:p-20">
+        <div className="relative grid gap-10 p-7 sm:p-10 md:grid-cols-12 md:gap-12 md:p-16 lg:p-20">
           <div className="md:col-span-8">
             <Reveal>
               <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-lime/25 bg-lime/10 px-4 py-1.5 font-mono text-[11px] uppercase tracking-[0.2em] text-lime">
@@ -26,7 +26,7 @@ export function CtaBlock() {
               </div>
               <h2
                 id="cta-title"
-                className="mb-6 font-display text-4xl leading-[1.02] font-semibold tracking-[-0.03em] md:text-6xl"
+                className="mb-6 font-display text-[clamp(1.9rem,7vw,3.75rem)] leading-[1.05] font-semibold tracking-[-0.03em] md:leading-[1.02]"
               >
                 Cada dia parado é dinheiro indo para o{" "}
                 <span className="serif-it text-gradient">concorrente.</span>
@@ -35,10 +35,10 @@ export function CtaBlock() {
                 Em 30 minutos você sai com clareza total do que precisa, quanto custa e em quanto
                 tempo fica pronto. Grátis, sem enrolação e sem pressão de venda.
               </p>
-              <div className="flex flex-wrap items-center gap-3">
+              <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
                 <Link
                   to="/diagnostico"
-                  className="group inline-flex items-center gap-2 rounded-full bg-primary px-7 py-4 text-sm font-semibold text-primary-foreground transition-all duration-300 glow-primary hover:-translate-y-0.5"
+                  className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-all duration-300 glow-primary hover:-translate-y-0.5 sm:w-auto sm:px-7 sm:py-4"
                 >
                   Começar meu diagnóstico
                   <ArrowUpRight className="size-4 transition-transform duration-300 group-hover:rotate-45" />
@@ -47,7 +47,7 @@ export function CtaBlock() {
                   href={waLink("Olá! Quero conversar com a PrimeCode sobre um projeto.")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 px-7 py-4 text-sm font-medium backdrop-blur transition-colors hover:border-foreground/25"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-border bg-card/40 px-6 py-3.5 text-sm font-medium backdrop-blur transition-colors hover:border-foreground/25 sm:w-auto sm:px-7 sm:py-4"
                 >
                   <WhatsAppIcon className="size-4" />
                   Prefiro pelo WhatsApp
@@ -107,7 +107,7 @@ export function CtaBlock() {
 export function Footer() {
   return (
     <footer className="border-t border-border">
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-12">
+      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:px-6 md:gap-12 md:grid-cols-12 md:py-16">
         <div className="md:col-span-5">
           <img src={primecodeLogo} alt="PrimeCode" className="mb-5 h-12 w-auto" />
           <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">

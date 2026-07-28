@@ -19,9 +19,9 @@ export function Portfolio() {
 
   return (
     <section id="portfolio" aria-labelledby="portfolio-title" className="relative">
-      <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
+      <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 md:py-32">
         <Reveal>
-          <div className="mb-14 flex flex-col justify-between gap-6 md:mb-16 md:flex-row md:items-end">
+          <div className="mb-10 flex flex-col justify-between gap-6 md:mb-16 md:flex-row md:items-end">
             <div className="max-w-xl">
               <SectionLabel index="04" text="Portfólio" />
               <h2
@@ -35,7 +35,7 @@ export function Portfolio() {
             <div
               role="tablist"
               aria-label="Filtrar projetos"
-              className="flex flex-wrap gap-1.5 rounded-full border border-border bg-card/50 p-1.5 backdrop-blur"
+              className="-mx-1 flex flex-wrap gap-1.5 self-start overflow-x-auto rounded-full border border-border bg-card/50 p-1.5 backdrop-blur"
             >
               {filters.map((f) => (
                 <button

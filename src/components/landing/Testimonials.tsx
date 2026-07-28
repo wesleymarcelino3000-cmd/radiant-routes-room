@@ -5,9 +5,9 @@ export function Testimonials() {
   return (
     <section aria-labelledby="depoimentos-title" className="relative overflow-hidden">
       <div aria-hidden="true" className="grid-bg absolute inset-0 opacity-30" />
-      <div className="relative mx-auto max-w-7xl px-6 py-24 md:py-32">
+      <div className="relative mx-auto max-w-7xl px-5 py-16 sm:px-6 md:py-32">
         <Reveal>
-          <div className="mb-16 max-w-2xl">
+          <div className="mb-10 max-w-2xl md:mb-16">
             <SectionLabel index="05" text="Quem já confiou" />
             <h2
               id="depoimentos-title"
@@ -23,8 +23,8 @@ export function Testimonials() {
           {testimonials.map((t, i) => (
             <Reveal key={t.name} delay={i * 90}>
               <figure
-                className="flex h-full flex-col rounded-[26px] border border-border bg-card/60 p-8 backdrop-blur transition-all duration-500 hover:-translate-y-1 hover:border-primary/40"
-                style={{ transform: `translateY(${i % 2 === 1 ? "1.5rem" : "0"})` }}
+                className="flex h-full flex-col rounded-[26px] border border-border bg-card/60 p-7 backdrop-blur transition-all duration-500 hover:-translate-y-1 hover:border-primary/40 md:p-8 lg:[transform:var(--stagger)]"
+                style={{ ["--stagger" as any]: `translateY(${i % 2 === 1 ? "1.5rem" : "0"})` }}
               >
                 <span
                   aria-hidden="true"
