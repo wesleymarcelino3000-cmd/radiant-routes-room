@@ -164,7 +164,7 @@ export function Hero() {
           </div>
 
           {/* Floating chips */}
-          <div className="glass animate-float-y absolute -top-6 right-0 rounded-2xl px-4 py-3 md:-right-6">
+          <div className="glass animate-float-y absolute -top-4 right-2 hidden rounded-2xl px-4 py-3 sm:block md:-top-6 md:-right-6">
             <div className="flex items-center gap-3">
               <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-lime/15 text-lime">
                 <Check className="size-4" aria-hidden="true" />
