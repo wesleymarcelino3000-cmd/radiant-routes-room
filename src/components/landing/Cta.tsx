@@ -4,7 +4,7 @@ import { ArrowUpRight, Instagram, Mail, Music2, Phone } from "lucide-react";
 import { navLinks } from "./data";
 import { waLink, WhatsAppIcon } from "./whatsapp";
 import { Reveal } from "./Reveal";
-import primecodeLogo from "@/assets/primecode-logo.png";
+import spaceAdsLogo from "@/assets/space-ads-logo.png.asset.json";
 
 export function CtaBlock() {
   return (
@@ -109,7 +109,7 @@ export function Footer() {
     <footer className="border-t border-border">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:px-6 md:gap-12 md:grid-cols-12 md:py-16">
         <div className="md:col-span-5">
-          <img src={primecodeLogo} alt="PrimeCode" className="mb-5 h-12 w-auto" />
+          <img src={spaceAdsLogo.url} alt="Space Ads" className="mb-5 h-12 w-auto" />
           <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">
             Sites, sistemas e apps sob medida para empresas que querem vender mais e trabalhar
             menos. Prazo por escrito, garantia de 90 dias e contato direto com quem constrói.
