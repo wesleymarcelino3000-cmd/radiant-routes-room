@@ -35,7 +35,16 @@ function ThankYouPage() {
       <div className="absolute inset-0 grid-bg opacity-20" />
 
       <div className="relative max-w-xl w-full glass rounded-3xl p-10 md:p-14 text-center shadow-elegant">
-        <img src={spaceAdsLogo.url} alt="Space Ads" className="h-16 w-auto mx-auto mb-8" />
+        <div className="mx-auto mb-8 flex items-center justify-center gap-3">
+          <span className="relative grid size-16 place-items-center rounded-2xl bg-gradient-to-br from-primary/25 via-primary/10 to-transparent ring-1 ring-border">
+            <span aria-hidden="true" className="absolute inset-0 rounded-2xl bg-primary/20 blur-lg" />
+            <img src={spaceAdsLogo.url} alt="" className="relative size-12 object-contain" />
+          </span>
+          <div className="flex flex-col items-start leading-none">
+            <span className="font-display text-xl font-semibold tracking-tight">Space Ads</span>
+            <span className="mt-1 font-mono text-[10px] uppercase tracking-[0.24em] text-muted-foreground">Digital Studio</span>
+          </div>
+        </div>
 
         <div className="inline-flex items-center justify-center size-16 rounded-full bg-[#25D366]/15 text-[#25D366] mx-auto mb-6">
           <CheckCircle2 className="size-9" />
