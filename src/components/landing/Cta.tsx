@@ -4,7 +4,8 @@ import { ArrowUpRight, Instagram, Mail, Music2, Phone } from "lucide-react";
 import { navLinks } from "./data";
 import { waLink, WhatsAppIcon } from "./whatsapp";
 import { Reveal } from "./Reveal";
-import spaceAdsLogo from "@/assets/space-ads-logo.png.asset.json";
+
+const spaceAdsLogo = "/space-ads-logo.png";
 
 export function CtaBlock() {
   return (
@@ -112,7 +113,7 @@ export function Footer() {
           <div className="mb-5 flex items-center gap-3">
             <span className="relative grid size-14 place-items-center rounded-full bg-gradient-to-br from-primary/25 via-primary/10 to-transparent ring-1 ring-border">
               <span aria-hidden="true" className="absolute inset-0 rounded-full bg-primary/15 blur-lg" />
-              <img src={spaceAdsLogo.url} alt="" className="relative size-11 rounded-full object-cover" />
+              <img src={spaceAdsLogo} alt="" className="relative size-11 rounded-full object-cover" />
             </span>
             <div className="flex flex-col leading-none">
               <span className="font-display text-xl font-semibold tracking-tight">Space Ads</span>

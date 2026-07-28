@@ -1,7 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, ShieldCheck, Clock, Lock } from "lucide-react";
 import { DiagnosticForm } from "@/components/DiagnosticForm";
-import spaceAdsLogo from "@/assets/space-ads-logo.png.asset.json";
+
+const spaceAdsLogo = "/space-ads-logo.png";
 
 export const Route = createFileRoute("/diagnostico")({
   head: () => ({
@@ -32,7 +33,7 @@ function DiagnosticoPage() {
           <Link to="/" className="group flex items-center gap-2.5" aria-label="Space Ads — voltar ao site">
             <span className="relative grid size-11 place-items-center rounded-full bg-gradient-to-br from-primary/25 to-primary/5 ring-1 ring-border transition-all duration-500 group-hover:ring-primary/50 md:size-12">
               <span aria-hidden="true" className="absolute inset-0 rounded-full bg-primary/20 blur-md opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-              <img src={spaceAdsLogo.url} alt="" className="relative size-9 rounded-full object-cover md:size-10" />
+              <img src={spaceAdsLogo} alt="" className="relative size-9 rounded-full object-cover md:size-10" />
             </span>
             <span className="flex flex-col leading-none">
               <span className="font-display text-base font-semibold tracking-tight md:text-lg">Space Ads</span>

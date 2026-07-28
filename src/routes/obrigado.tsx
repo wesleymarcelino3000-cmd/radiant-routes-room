@@ -1,7 +1,8 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { CheckCircle2, ArrowLeft } from "lucide-react";
 import { useEffect, useState } from "react";
-import spaceAdsLogo from "@/assets/space-ads-logo.png.asset.json";
+
+const spaceAdsLogo = "/space-ads-logo.png";
 
 export const Route = createFileRoute("/obrigado")({
   head: () => ({
@@ -38,7 +39,7 @@ function ThankYouPage() {
         <div className="mx-auto mb-8 flex items-center justify-center gap-3">
           <span className="relative grid size-16 place-items-center rounded-full bg-gradient-to-br from-primary/25 via-primary/10 to-transparent ring-1 ring-border">
             <span aria-hidden="true" className="absolute inset-0 rounded-full bg-primary/20 blur-lg" />
-            <img src={spaceAdsLogo.url} alt="" className="relative size-12 rounded-full object-cover" />
+            <img src={spaceAdsLogo} alt="" className="relative size-12 rounded-full object-cover" />
           </span>
           <div className="flex flex-col items-start leading-none">
             <span className="font-display text-xl font-semibold tracking-tight">Space Ads</span>
