@@ -7,7 +7,7 @@ import { Reveal, SectionLabel } from "./Reveal";
 export function Services() {
   return (
     <section id="servicos" aria-labelledby="servicos-title" className="relative">
-      <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
+      <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 md:py-32">
         <Reveal>
           <div className="mb-14 grid items-end gap-8 md:mb-20 md:grid-cols-12">
             <div className="md:col-span-8">
