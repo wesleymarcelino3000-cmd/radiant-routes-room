@@ -175,7 +175,7 @@ export function Hero() {
               </div>
             </div>
           </div>
-          <div className="glass animate-float-y absolute -bottom-6 left-0 rounded-2xl px-4 py-3 [animation-delay:1.4s] md:-left-6">
+          <div className="glass animate-float-y absolute -bottom-4 left-2 hidden rounded-2xl px-4 py-3 [animation-delay:1.4s] sm:block md:-bottom-6 md:-left-6">
             <div className="flex items-center gap-3">
               <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-primary/15 text-primary">
                 <Zap className="size-4" aria-hidden="true" />
