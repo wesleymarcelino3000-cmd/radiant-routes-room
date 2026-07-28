@@ -41,8 +41,15 @@ export function Nav() {
         aria-label="Navegação principal"
         className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4"
       >
-        <a href="#top" className="flex items-center" aria-label="Space Ads — voltar ao topo">
-          <img src={spaceAdsLogo.url} alt="Space Ads" className="h-9 w-auto md:h-10" />
+        <a href="#top" className="group flex items-center gap-2.5" aria-label="Space Ads — voltar ao topo">
+          <span className="relative grid size-10 place-items-center rounded-full bg-gradient-to-br from-primary/25 to-primary/5 ring-1 ring-border transition-all duration-500 group-hover:ring-primary/50 md:size-11">
+            <span aria-hidden="true" className="absolute inset-0 rounded-full bg-primary/20 blur-md opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+            <img src={spaceAdsLogo.url} alt="" className="relative size-8 object-contain md:size-9" />
+          </span>
+          <span className="flex flex-col leading-none">
+            <span className="font-display text-[15px] font-semibold tracking-tight md:text-base">Space Ads</span>
+            <span className="mt-0.5 font-mono text-[9px] uppercase tracking-[0.24em] text-muted-foreground">Digital Studio</span>
+          </span>
         </a>
 
         <ul className="hidden items-center gap-8 text-sm text-muted-foreground lg:flex">
