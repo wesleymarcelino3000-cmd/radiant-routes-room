@@ -72,7 +72,7 @@ export function CtaBlock() {
                     </span>
                     <span>
                       <span className="block text-xs text-muted-foreground">E-mail</span>
-                      <span className="link-underline">primecode321@gmail.com</span>
+                      <span className="link-underline">contato@spaceads</span>
                     </span>
                   </a>
                 </li>
