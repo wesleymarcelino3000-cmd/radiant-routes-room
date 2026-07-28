@@ -101,7 +101,7 @@ const Email = ({
           <Hr style={hr} />
 
           <Text style={footer}>
-            Enviado automaticamente pelo formulário do site primecode1.com.br
+            Enviado automaticamente pelo formulário do site Space Ads
           </Text>
         </Container>
       </Body>
