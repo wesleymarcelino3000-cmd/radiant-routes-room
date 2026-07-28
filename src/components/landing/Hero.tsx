@@ -18,7 +18,7 @@ export function Hero() {
         el.style.setProperty("--mx", `${e.clientX - r.left}px`);
         el.style.setProperty("--my", `${e.clientY - r.top}px`);
       }}
-      className="aurora-bg relative overflow-hidden pt-32 pb-20 md:pt-44 md:pb-28"
+      className="aurora-bg relative overflow-hidden pt-28 pb-16 md:pt-44 md:pb-28"
     >
       <div aria-hidden="true" className="grid-bg absolute inset-0 opacity-60" />
       <div
