@@ -110,13 +110,13 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:px-6 md:gap-12 md:grid-cols-12 md:py-16">
         <div className="md:col-span-5">
           <div className="mb-5 flex items-center gap-3">
-            <span className="relative grid size-14 place-items-center rounded-2xl bg-gradient-to-br from-primary/25 via-primary/10 to-transparent ring-1 ring-border">
-              <span aria-hidden="true" className="absolute inset-0 rounded-2xl bg-primary/15 blur-lg" />
-              <img src={spaceAdsLogo.url} alt="" className="relative size-11 object-contain" />
+            <span className="relative grid size-14 place-items-center rounded-full bg-gradient-to-br from-primary/25 via-primary/10 to-transparent ring-1 ring-border">
+              <span aria-hidden="true" className="absolute inset-0 rounded-full bg-primary/15 blur-lg" />
+              <img src={spaceAdsLogo.url} alt="" className="relative size-11 rounded-full object-cover" />
             </span>
             <div className="flex flex-col leading-none">
               <span className="font-display text-xl font-semibold tracking-tight">Space Ads</span>
-              <span className="mt-1 font-mono text-[10px] uppercase tracking-[0.24em] text-muted-foreground">Digital Studio</span>
+              <span className="mt-1 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">Transformando ideias em soluções digitais</span>
             </div>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">

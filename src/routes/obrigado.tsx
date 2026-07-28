@@ -36,13 +36,13 @@ function ThankYouPage() {
 
       <div className="relative max-w-xl w-full glass rounded-3xl p-10 md:p-14 text-center shadow-elegant">
         <div className="mx-auto mb-8 flex items-center justify-center gap-3">
-          <span className="relative grid size-16 place-items-center rounded-2xl bg-gradient-to-br from-primary/25 via-primary/10 to-transparent ring-1 ring-border">
-            <span aria-hidden="true" className="absolute inset-0 rounded-2xl bg-primary/20 blur-lg" />
-            <img src={spaceAdsLogo.url} alt="" className="relative size-12 object-contain" />
+          <span className="relative grid size-16 place-items-center rounded-full bg-gradient-to-br from-primary/25 via-primary/10 to-transparent ring-1 ring-border">
+            <span aria-hidden="true" className="absolute inset-0 rounded-full bg-primary/20 blur-lg" />
+            <img src={spaceAdsLogo.url} alt="" className="relative size-12 rounded-full object-cover" />
           </span>
           <div className="flex flex-col items-start leading-none">
             <span className="font-display text-xl font-semibold tracking-tight">Space Ads</span>
-            <span className="mt-1 font-mono text-[10px] uppercase tracking-[0.24em] text-muted-foreground">Digital Studio</span>
+            <span className="mt-1 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">Transformando ideias em soluções digitais</span>
           </div>
         </div>
 
