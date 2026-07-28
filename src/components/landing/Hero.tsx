@@ -34,25 +34,25 @@ export function Hero() {
         className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-linear-to-b from-transparent to-background"
       />
 
-      <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-12">
+      <div className="relative mx-auto grid max-w-7xl items-center gap-14 px-5 sm:px-6 md:gap-16 lg:grid-cols-12">
         {/* Copy */}
-        <div className="lg:col-span-6 animate-rise">
-          <div className="mb-9 inline-flex items-center gap-3 rounded-full border border-border bg-card/60 px-4 py-1.5 text-xs text-muted-foreground backdrop-blur">
-            <span className="relative flex size-1.5">
+        <div className="min-w-0 lg:col-span-6 animate-rise">
+          <div className="mb-7 inline-flex max-w-full items-center gap-2.5 rounded-full border border-border bg-card/60 px-3.5 py-1.5 text-[11px] text-muted-foreground backdrop-blur sm:gap-3 sm:px-4 sm:text-xs">
+            <span className="relative flex size-1.5 shrink-0">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-lime opacity-60" />
               <span className="relative inline-flex size-1.5 rounded-full bg-lime" />
             </span>
-            <span className="font-mono uppercase tracking-[0.18em]">Agenda aberta</span>
-            <span aria-hidden="true" className="h-3 w-px bg-border" />
-            <span>Vagas limitadas por mês</span>
+            <span className="font-mono uppercase tracking-[0.16em] sm:tracking-[0.18em]">Agenda aberta</span>
+            <span aria-hidden="true" className="h-3 w-px shrink-0 bg-border" />
+            <span className="truncate">Vagas limitadas por mês</span>
           </div>
 
-          <h1 className="mb-8 font-display text-[clamp(2.6rem,6vw,4.6rem)] leading-[1.03] font-semibold tracking-[-0.03em]">
+          <h1 className="mb-6 font-display text-[clamp(2rem,8.5vw,4.6rem)] leading-[1.05] font-semibold tracking-[-0.03em] [word-break:break-word] md:mb-8 md:leading-[1.03]">
             Seu concorrente já vende online.{" "}
             <span className="serif-it text-gradient">Está na hora de virar o jogo.</span>
           </h1>
 
-          <p className="mb-11 max-w-xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+          <p className="mb-9 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg md:mb-11 md:text-xl">
             Criamos sites, sistemas e aplicativos que atraem clientes 24 horas por dia — mesmo
             enquanto você dorme. Prazo por escrito, garantia de 90 dias e contato direto com quem
             desenvolve.
