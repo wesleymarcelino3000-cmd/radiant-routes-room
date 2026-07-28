@@ -44,7 +44,7 @@ export function CtaBlock() {
                   <ArrowUpRight className="size-4 transition-transform duration-300 group-hover:rotate-45" />
                 </Link>
                 <a
-                  href={waLink("Olá! Quero conversar com a PrimeCode sobre um projeto.")}
+                  href={waLink("Olá! Quero conversar com a Space Ads sobre um projeto.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-border bg-card/40 px-6 py-3.5 text-sm font-medium backdrop-blur transition-colors hover:border-foreground/25 sm:w-auto sm:px-7 sm:py-4"
@@ -78,7 +78,7 @@ export function CtaBlock() {
                 </li>
                 <li>
                   <a
-                    href={waLink("Olá! Quero falar com a PrimeCode.")}
+                    href={waLink("Olá! Quero falar com a Space Ads.")}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex items-start gap-3 text-sm"
@@ -168,7 +168,7 @@ export function Footer() {
       </div>
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 px-6 py-6 text-xs text-muted-foreground md:flex-row">
-          <span>© {new Date().getFullYear()} PrimeCode. Todos os direitos reservados.</span>
+          <span>© {new Date().getFullYear()} Space Ads. Todos os direitos reservados.</span>
           <span className="font-mono uppercase tracking-[0.22em]">
             Feito para quem quer resultado
           </span>

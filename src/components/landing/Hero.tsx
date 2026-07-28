@@ -100,7 +100,7 @@ export function Hero() {
                 <span aria-hidden="true" className="size-2.5 rounded-full bg-foreground/15" />
                 <span aria-hidden="true" className="size-2.5 rounded-full bg-foreground/15" />
                 <span className="ml-2 truncate font-mono text-[11px] text-muted-foreground">
-                  primecode · projeto / atlas-capital
+                  space-ads · projeto / atlas-capital
                 </span>
                 <span className="ml-auto inline-flex shrink-0 items-center gap-1.5 rounded-full border border-lime/25 bg-lime/10 px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wider text-lime">
                   <span className="size-1 rounded-full bg-lime" />

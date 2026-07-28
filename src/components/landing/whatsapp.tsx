@@ -14,7 +14,7 @@ export function WhatsAppIcon({ className = "size-4" }: { className?: string }) {
 export function WhatsAppFab() {
   return (
     <a
-      href={waLink("Olá! Quero falar com a PrimeCode.")}
+      href={waLink("Olá! Quero falar com a Space Ads.")}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Fale conosco no WhatsApp"

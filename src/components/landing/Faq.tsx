@@ -23,7 +23,7 @@ export function Faq() {
                 sem promessa de vendedor.
               </p>
               <a
-                href={waLink("Olá! Tenho uma dúvida específica sobre os serviços da PrimeCode.")}
+                href={waLink("Olá! Tenho uma dúvida específica sobre os serviços da Space Ads.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-6 py-3 text-sm font-semibold text-whatsapp-foreground transition-transform hover:-translate-y-0.5"

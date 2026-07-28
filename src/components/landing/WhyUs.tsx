@@ -17,7 +17,7 @@ export function WhyUs() {
           <div className="lg:col-span-5">
             <div className="lg:sticky lg:top-28">
               <Reveal>
-                <SectionLabel index="02" text="Por que a PrimeCode" onPaper />
+                <SectionLabel index="02" text="Por que a Space Ads" onPaper />
                 <h2
                   id="agencia-title"
                   className="mb-6 font-display text-4xl leading-[1.06] font-semibold tracking-[-0.025em] md:text-5xl"
@@ -102,7 +102,7 @@ export function WhyUs() {
               <span className="text-primary-ink">trabalhando por você</span>."
             </blockquote>
             <figcaption className="mt-6 font-mono text-[11px] uppercase tracking-[0.24em] text-paper-muted">
-              — Princípio nº 1 da PrimeCode
+              — Princípio nº 1 da Space Ads
             </figcaption>
           </figure>
         </Reveal>
