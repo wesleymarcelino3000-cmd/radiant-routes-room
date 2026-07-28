@@ -58,18 +58,18 @@ export function Hero() {
             desenvolve.
           </p>
 
-          <div className="mb-7 flex flex-wrap items-center gap-3">
+          <div className="mb-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
             <Link
               to="/diagnostico"
               aria-label="Começar diagnóstico gratuito"
-              className="group inline-flex items-center gap-2.5 rounded-full bg-primary px-7 py-4 text-sm font-semibold text-primary-foreground transition-all duration-300 glow-primary hover:-translate-y-0.5"
+              className="group inline-flex w-full items-center justify-center gap-2.5 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-all duration-300 glow-primary hover:-translate-y-0.5 sm:w-auto sm:px-7 sm:py-4"
             >
               Quero meu diagnóstico grátis
               <ArrowUpRight className="size-4 transition-transform duration-300 group-hover:rotate-45" />
             </Link>
             <a
               href="#portfolio"
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 px-7 py-4 text-sm font-medium backdrop-blur transition-colors hover:border-foreground/20 hover:bg-card"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-border bg-card/40 px-6 py-3.5 text-sm font-medium backdrop-blur transition-colors hover:border-foreground/20 hover:bg-card sm:w-auto sm:px-7 sm:py-4"
             >
               Ver resultados reais
             </a>
