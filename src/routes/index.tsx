@@ -14,7 +14,7 @@ import { WhatsAppFab } from "@/components/landing/whatsapp";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "PrimeCode — Sites e sistemas que vendem mais todos os dias" },
+      { title: "Space Ads — Sites e sistemas que vendem mais todos os dias" },
       {
         name: "description",
         content:
@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "PrimeCode — Sites e sistemas que vendem mais todos os dias",
+        content: "Space Ads — Sites e sistemas que vendem mais todos os dias",
       },
       {
         property: "og:description",

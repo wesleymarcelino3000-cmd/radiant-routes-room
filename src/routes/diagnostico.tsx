@@ -6,14 +6,14 @@ import spaceAdsLogo from "@/assets/space-ads-logo.png.asset.json";
 export const Route = createFileRoute("/diagnostico")({
   head: () => ({
     meta: [
-      { title: "Diagnóstico Gratuito — PrimeCode" },
+      { title: "Diagnóstico Gratuito — Space Ads" },
       {
         name: "description",
         content:
           "Responda 8 perguntas rápidas e receba um diagnóstico personalizado do seu projeto digital. Grátis, sem compromisso e sem cartão.",
       },
       { name: "robots", content: "noindex" },
-      { property: "og:title", content: "Diagnóstico Gratuito — PrimeCode" },
+      { property: "og:title", content: "Diagnóstico Gratuito — Space Ads" },
       {
         property: "og:description",
         content: "Responda 8 perguntas rápidas e receba um plano sob medida para o seu negócio.",

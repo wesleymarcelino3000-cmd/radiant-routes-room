@@ -6,7 +6,7 @@ import spaceAdsLogo from "@/assets/space-ads-logo.png.asset.json";
 export const Route = createFileRoute("/obrigado")({
   head: () => ({
     meta: [
-      { title: "Obrigado! — PrimeCode" },
+      { title: "Obrigado! — Space Ads" },
       { name: "description", content: "Recebemos seu diagnóstico. Em instantes retornaremos o contato." },
       { name: "robots", content: "noindex" },
     ],

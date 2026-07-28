@@ -29,7 +29,7 @@ const buildWhatsAppUrl = (phone: string, name: string) => {
   if (!digits) return ''
   const withCountry = digits.length <= 11 ? `55${digits}` : digits
   const text = encodeURIComponent(
-    `Olá ${name.split(' ')[0] || ''}! Aqui é da PrimeCode. Recebi seu diagnóstico no nosso site e queria conversar sobre seu projeto.`,
+    `Olá ${name.split(' ')[0] || ''}! Aqui é da Space Ads. Recebi seu diagnóstico no nosso site e queria conversar sobre seu projeto.`,
   )
   return `https://wa.me/${withCountry}?text=${text}`
 }
@@ -45,7 +45,7 @@ const Email = ({
   const waUrl = phone !== '—' ? buildWhatsAppUrl(phone, name) : ''
   const mailUrl =
     email !== '—'
-      ? `mailto:${email}?subject=${encodeURIComponent('PrimeCode — sobre seu diagnóstico')}&body=${encodeURIComponent(`Olá ${name.split(' ')[0] || ''},\n\nRecebemos seu diagnóstico no site e queríamos conversar sobre seu projeto.\n\n— Equipe PrimeCode`)}`
+      ? `mailto:${email}?subject=${encodeURIComponent('Space Ads — sobre seu diagnóstico')}&body=${encodeURIComponent(`Olá ${name.split(' ')[0] || ''},\n\nRecebemos seu diagnóstico no site e queríamos conversar sobre seu projeto.\n\n— Equipe Space Ads`)}`
       : ''
 
   return (
@@ -55,7 +55,7 @@ const Email = ({
       <Body style={main}>
         <Container style={container}>
           <Section style={header}>
-            <Text style={brand}>PrimeCode</Text>
+            <Text style={brand}>Space Ads</Text>
             <Heading style={h1}>Novo lead recebido</Heading>
             <Text style={sub}>Recebido em {submittedAt}</Text>
           </Section>
