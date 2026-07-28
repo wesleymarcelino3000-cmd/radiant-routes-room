@@ -29,8 +29,15 @@ function DiagnosticoPage() {
       <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
       <div className="relative max-w-3xl mx-auto px-6 py-10 md:py-16">
         <div className="flex items-center justify-between mb-10">
-          <Link to="/" className="flex items-center" aria-label="Space Ads — voltar ao site">
-            <img src={spaceAdsLogo.url} alt="Space Ads" className="h-10 w-auto md:h-12" />
+          <Link to="/" className="group flex items-center gap-2.5" aria-label="Space Ads — voltar ao site">
+            <span className="relative grid size-11 place-items-center rounded-full bg-gradient-to-br from-primary/25 to-primary/5 ring-1 ring-border transition-all duration-500 group-hover:ring-primary/50 md:size-12">
+              <span aria-hidden="true" className="absolute inset-0 rounded-full bg-primary/20 blur-md opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+              <img src={spaceAdsLogo.url} alt="" className="relative size-9 object-contain md:size-10" />
+            </span>
+            <span className="flex flex-col leading-none">
+              <span className="font-display text-base font-semibold tracking-tight md:text-lg">Space Ads</span>
+              <span className="mt-0.5 font-mono text-[9px] uppercase tracking-[0.24em] text-muted-foreground">Digital Studio</span>
+            </span>
           </Link>
           <Link
             to="/"
