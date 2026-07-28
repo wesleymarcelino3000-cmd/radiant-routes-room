@@ -86,7 +86,7 @@ export function Hero() {
         </div>
 
         {/* Blueprint panel */}
-        <div className="relative lg:col-span-6 animate-rise [animation-delay:180ms]">
+        <div className="relative min-w-0 lg:col-span-6 animate-rise [animation-delay:180ms]">
           <div
             aria-hidden="true"
             className="absolute -inset-10 rounded-full bg-linear-to-tr from-primary/15 via-violet/10 to-transparent blur-3xl"
