@@ -55,26 +55,20 @@ export type Guarantee = {
 
 export const guarantees: Guarantee[] = [
   {
-    icon: Zap,
-    code: "G.01",
-    title: "Entrega no prazo — ou você não paga",
-    desc: "Cronograma claro assinado antes de começar. Se atrasarmos por nossa culpa, o custo é nosso. Simples assim.",
-  },
-  {
     icon: ShieldCheck,
-    code: "G.02",
+    code: "G.01",
     title: "90 dias de garantia total",
     desc: "Qualquer bug ou ajuste após a entrega, resolvemos sem custo. Compromisso por escrito no contrato.",
   },
   {
     icon: Rocket,
-    code: "G.03",
+    code: "G.02",
     title: "Pensado para escalar com você",
     desc: "Nasce preparado para 10 ou 10 mil clientes por dia. Sem retrabalho quando o seu negócio crescer.",
   },
   {
     icon: MessagesSquare,
-    code: "G.04",
+    code: "G.03",
     title: "Você fala direto com o dev",
     desc: "Sem intermediário e sem gerente enrolando. Contato direto no WhatsApp com quem constrói o seu projeto.",
   },
