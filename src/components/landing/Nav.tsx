@@ -44,11 +44,11 @@ export function Nav() {
         <a href="#top" className="group flex items-center gap-2.5" aria-label="Space Ads — voltar ao topo">
           <span className="relative grid size-10 place-items-center rounded-full bg-gradient-to-br from-primary/25 to-primary/5 ring-1 ring-border transition-all duration-500 group-hover:ring-primary/50 md:size-11">
             <span aria-hidden="true" className="absolute inset-0 rounded-full bg-primary/20 blur-md opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-            <img src={spaceAdsLogo.url} alt="" className="relative size-8 object-contain md:size-9" />
+            <img src={spaceAdsLogo.url} alt="" className="relative size-8 rounded-full object-cover md:size-9" />
           </span>
           <span className="flex flex-col leading-none">
             <span className="font-display text-[15px] font-semibold tracking-tight md:text-base">Space Ads</span>
-            <span className="mt-0.5 font-mono text-[9px] uppercase tracking-[0.24em] text-muted-foreground">Digital Studio</span>
+            <span className="mt-0.5 font-mono text-[9px] uppercase tracking-[0.22em] text-muted-foreground">Transformando ideias em soluções digitais</span>
           </span>
         </a>
 
