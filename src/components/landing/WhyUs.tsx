@@ -11,7 +11,7 @@ export function WhyUs() {
     >
       <div aria-hidden="true" className="dot-bg-paper absolute inset-0 opacity-70" />
 
-      <div className="relative mx-auto max-w-7xl px-6 py-24 md:py-32">
+      <div className="relative mx-auto max-w-7xl px-5 py-16 sm:px-6 md:py-32">
         <div className="grid gap-14 lg:grid-cols-12">
           {/* Sticky intro */}
           <div className="lg:col-span-5">
