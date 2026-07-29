@@ -1,8 +1,10 @@
 import {
-  Code2,
-  Layers,
+  Palette,
   Smartphone,
+  Search,
   Zap,
+  MessageCircle,
+  Server,
   ShieldCheck,
   Rocket,
   MessagesSquare,
@@ -20,29 +22,72 @@ export type Service = {
   short: string;
   desc: string;
   tech: string[];
+  featured?: boolean;
+  badge?: string;
 };
 
 export const services: Service[] = [
   {
     tag: "01",
-    title: "Sites que convertem visitantes em clientes",
+    title: "Criação de sites profissionais",
     short: "um site profissional",
-    desc: "Chega de site bonito que não vende. Páginas rápidas, otimizadas para o Google e projetadas para transformar cada visita em oportunidade real de negócio.",
-    tech: ["React", "Next.js", "SEO", "Performance"],
+    desc: "Nossa especialidade. Sites modernos, rápidos e otimizados para o Google — feitos para transformar visitantes em clientes todos os dias.",
+    tech: ["Design exclusivo", "SEO", "Responsivo", "Alta velocidade"],
+    featured: true,
+    badge: "Principal",
   },
   {
     tag: "02",
-    title: "Sistemas sob medida que economizam horas",
+    title: "Sistemas sob medida",
     short: "um sistema sob medida",
-    desc: "Automatize o que hoje consome o seu dia: pedidos, estoque, agendamentos, financeiro. Um sistema pensado para o seu negócio — não um pacote genérico.",
+    desc: "Para quem precisa ir além do site: automatize pedidos, estoque, agendamentos e financeiro com uma solução feita para o seu negócio.",
     tech: ["Node.js", "PostgreSQL", "APIs", "Cloud"],
   },
   {
     tag: "03",
-    title: "Aplicativos que seus clientes vão usar",
+    title: "Aplicativos Android e iOS",
     short: "um aplicativo",
-    desc: "Apps rápidos e intuitivos, feitos para gerar recorrência. Do iOS ao Android, com foco em retenção e resultado — não só em download.",
+    desc: "Solução avançada para empresas que querem um produto digital próprio. Apps rápidos, intuitivos e focados em recorrência.",
     tech: ["React Native", "Flutter", "Swift", "Kotlin"],
+  },
+];
+
+export type Benefit = {
+  icon: LucideIcon;
+  title: string;
+  desc: string;
+};
+
+export const benefits: Benefit[] = [
+  {
+    icon: Palette,
+    title: "Design exclusivo",
+    desc: "Nada de tema pronto. Cada site é desenhado do zero para a identidade do seu negócio.",
+  },
+  {
+    icon: Smartphone,
+    title: "100% responsivo",
+    desc: "Perfeito no celular, tablet e desktop — onde o seu cliente estiver.",
+  },
+  {
+    icon: Search,
+    title: "SEO otimizado",
+    desc: "Estrutura pronta para aparecer no Google e atrair clientes todos os dias.",
+  },
+  {
+    icon: Zap,
+    title: "Alta velocidade",
+    desc: "Carregamento em segundos. Site rápido converte muito mais.",
+  },
+  {
+    icon: MessageCircle,
+    title: "Integração com WhatsApp",
+    desc: "Botão direto para o cliente falar com você no canal que ele já usa.",
+  },
+  {
+    icon: Server,
+    title: "Hospedagem e suporte",
+    desc: "Cuidamos da hospedagem, dos backups e de qualquer ajuste depois da entrega.",
   },
 ];
 
