@@ -1,10 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 import { Nav } from "@/components/landing/Nav";
-import { Hero, TechMarquee } from "@/components/landing/Hero";
+import { Hero } from "@/components/landing/Hero";
+import { Benefits } from "@/components/landing/Benefits";
 import { Services } from "@/components/landing/Services";
-import { WhyUs } from "@/components/landing/WhyUs";
-import { Process } from "@/components/landing/Process";
 import { Portfolio } from "@/components/landing/Portfolio";
 import { Testimonials } from "@/components/landing/Testimonials";
 import { Faq } from "@/components/landing/Faq";
@@ -14,20 +13,20 @@ import { WhatsAppFab } from "@/components/landing/whatsapp";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Space Ads — Sites e sistemas que vendem mais todos os dias" },
+      { title: "Space Ads — Criação de sites profissionais que vendem" },
       {
         name: "description",
         content:
-          "Criamos sites, sistemas e apps que transformam visitantes em clientes. Diagnóstico gratuito em 30 minutos, prazo por escrito e garantia de 90 dias.",
+          "Especialistas em criação de sites profissionais, rápidos e otimizados para o Google. Também desenvolvemos sistemas e aplicativos sob medida. Solicite seu orçamento.",
       },
       {
         property: "og:title",
-        content: "Space Ads — Sites e sistemas que vendem mais todos os dias",
+        content: "Space Ads — Criação de sites profissionais que vendem",
       },
       {
         property: "og:description",
         content:
-          "Do primeiro clique à venda: sites, sistemas e apps sob medida, entregues no prazo e com garantia.",
+          "Sites modernos, rápidos e otimizados para SEO. Design exclusivo, integração com WhatsApp, hospedagem e suporte inclusos.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
@@ -44,10 +43,8 @@ function HomePage() {
       <Nav />
       <main>
         <Hero />
-        <TechMarquee />
+        <Benefits />
         <Services />
-        <WhyUs />
-        <Process />
         <Portfolio />
         <Testimonials />
         <Faq />
