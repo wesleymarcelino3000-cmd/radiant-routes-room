@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, MessageCircle, Lightbulb, Hammer, Rocket } from "lucide-react";
+import { ArrowUpRight, Lightbulb, Hammer, Rocket } from "lucide-react";
+import { WhatsAppIcon } from "./whatsapp";
 
 import { Reveal, SectionLabel } from "./Reveal";
 
