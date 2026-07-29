@@ -85,7 +85,7 @@ export function CtaBlock() {
                     className="group flex items-start gap-3 text-sm"
                   >
                     <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-whatsapp/15 text-whatsapp">
-                      <Phone className="size-4" aria-hidden="true" />
+                      <WhatsAppIcon className="size-4" aria-hidden="true" />
                     </span>
                     <span>
                       <span className="block text-xs text-muted-foreground">WhatsApp</span>
