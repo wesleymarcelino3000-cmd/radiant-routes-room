@@ -269,8 +269,7 @@ export const stack = [
 
 export const navLinks = [
   { href: "#servicos", label: "Serviços" },
-  { href: "#agencia", label: "Agência" },
-  { href: "#processo", label: "Processo" },
+  { href: "#beneficios", label: "Benefícios" },
   { href: "#portfolio", label: "Portfólio" },
   { href: "#faq", label: "Dúvidas" },
 ];
