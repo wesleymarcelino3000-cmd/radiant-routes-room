@@ -65,7 +65,7 @@ export function CtaBlock() {
               <ul className="space-y-4">
                 <li>
                   <a
-                    href="mailto:primecode321@gmail.com"
+                    href="mailto:spaceads.tech@gmail.com"
                     className="group flex items-start gap-3 text-sm"
                   >
                     <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-primary/15 text-primary">
