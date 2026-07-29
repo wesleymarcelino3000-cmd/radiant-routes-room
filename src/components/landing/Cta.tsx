@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, Instagram, Mail, Phone } from "lucide-react";
+import { ArrowUpRight, Instagram, Mail } from "lucide-react";
 
 import { navLinks } from "./data";
 import { waLink, WhatsAppIcon } from "./whatsapp";
