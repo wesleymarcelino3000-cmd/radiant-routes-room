@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, Instagram } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 import { navLinks } from "./data";
 import { waLink, WhatsAppIcon } from "./whatsapp";
@@ -94,23 +94,6 @@ export function Footer() {
                 </a>
               </li>
             ))}
-          </ul>
-        </div>
-        <div className="md:col-span-3">
-          <h5 className="mb-4 font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
-            Social
-          </h5>
-          <ul className="space-y-2 text-sm">
-            <li>
-              <a
-                href="https://www.instagram.com/spaceads.tech/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 transition-colors hover:text-primary"
-              >
-                <Instagram className="size-4" aria-hidden="true" /> @spaceads.tech
-              </a>
-            </li>
           </ul>
         </div>
       </div>
