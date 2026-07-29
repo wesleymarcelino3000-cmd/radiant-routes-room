@@ -96,7 +96,7 @@ export const benefits: Benefit[] = [
 ];
 
 export type Guarantee = {
-  icon: LucideIcon;
+  icon: IconComponent;
   code: string;
   title: string;
   desc: string;
