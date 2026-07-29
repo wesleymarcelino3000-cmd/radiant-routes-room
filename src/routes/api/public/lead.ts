@@ -10,7 +10,7 @@ const LeadSchema = z.object({
   message: z.string().trim().min(1).max(4000),
 })
 
-const RECIPIENT = 'primecode321@gmail.com'
+const RECIPIENT = 'spaceads.tech@gmail.com'
 
 export const Route = createFileRoute('/api/public/lead')({
   server: {

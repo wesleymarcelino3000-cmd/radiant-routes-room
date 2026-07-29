@@ -168,7 +168,7 @@ export function DiagnosticForm() {
 
     // Envio automático por email via FormSubmit (funciona em qualquer hospedagem).
     try {
-      await fetch("https://formsubmit.co/ajax/primecode321@gmail.com", {
+      await fetch("https://formsubmit.co/ajax/spaceads.tech@gmail.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
