@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, Instagram, Mail, Music2, Phone } from "lucide-react";
+import { ArrowUpRight, Instagram, Mail, Phone } from "lucide-react";
 
 import { navLinks } from "./data";
 import { waLink, WhatsAppIcon } from "./whatsapp";
@@ -152,16 +152,6 @@ export function Footer() {
                 className="inline-flex items-center gap-2 transition-colors hover:text-primary"
               >
                 <Instagram className="size-4" aria-hidden="true" /> @spaceads.tech
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.tiktok.com/@primecode43"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 transition-colors hover:text-primary"
-              >
-                <Music2 className="size-4" aria-hidden="true" /> TikTok
               </a>
             </li>
           </ul>
