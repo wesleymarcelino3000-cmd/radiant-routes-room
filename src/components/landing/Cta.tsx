@@ -103,12 +103,12 @@ export function Footer() {
           <ul className="space-y-2 text-sm">
             <li>
               <a
-                href="https://www.instagram.com/spaceads.tech/"
+                href="https://www.instagram.com/space.tech/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 transition-colors hover:text-primary"
               >
-                <Instagram className="size-4" aria-hidden="true" /> @spaceads.tech
+                <Instagram className="size-4" aria-hidden="true" /> @space.tech
               </a>
             </li>
           </ul>
