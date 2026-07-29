@@ -57,7 +57,7 @@ export const services: Service[] = [
 ];
 
 export type Benefit = {
-  icon: LucideIcon;
+  icon: IconComponent;
   title: string;
   desc: string;
 };
