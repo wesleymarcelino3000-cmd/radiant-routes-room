@@ -96,23 +96,6 @@ export function Footer() {
             ))}
           </ul>
         </div>
-        <div className="md:col-span-3">
-          <h5 className="mb-4 font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
-            Social
-          </h5>
-          <ul className="space-y-2 text-sm">
-            <li>
-              <a
-                href="https://www.instagram.com/spaceads.tech/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 transition-colors hover:text-primary"
-              >
-                <Instagram className="size-4" aria-hidden="true" /> @spaceads.tech
-              </a>
-            </li>
-          </ul>
-        </div>
       </div>
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 px-6 py-6 text-xs text-muted-foreground md:flex-row">
