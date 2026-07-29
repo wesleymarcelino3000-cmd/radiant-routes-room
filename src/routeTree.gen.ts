@@ -9,12 +9,18 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ObrigadoRouteImport } from './routes/obrigado'
 import { Route as DiagnosticoRouteImport } from './routes/diagnostico'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ApiPublicLeadRouteImport } from './routes/api/public/lead'
 import { Route as LovableEmailTransactionalPreviewRouteImport } from './routes/lovable/email/transactional/preview'
 
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ObrigadoRoute = ObrigadoRouteImport.update({
   id: '/obrigado',
   path: '/obrigado',
@@ -46,6 +52,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/diagnostico': typeof DiagnosticoRoute
   '/obrigado': typeof ObrigadoRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/api/public/lead': typeof ApiPublicLeadRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
@@ -53,6 +60,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/diagnostico': typeof DiagnosticoRoute
   '/obrigado': typeof ObrigadoRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/api/public/lead': typeof ApiPublicLeadRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
@@ -61,6 +69,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/diagnostico': typeof DiagnosticoRoute
   '/obrigado': typeof ObrigadoRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/api/public/lead': typeof ApiPublicLeadRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
@@ -70,6 +79,7 @@ export interface FileRouteTypes {
     | '/'
     | '/diagnostico'
     | '/obrigado'
+    | '/sitemap.xml'
     | '/api/public/lead'
     | '/lovable/email/transactional/preview'
   fileRoutesByTo: FileRoutesByTo
@@ -77,6 +87,7 @@ export interface FileRouteTypes {
     | '/'
     | '/diagnostico'
     | '/obrigado'
+    | '/sitemap.xml'
     | '/api/public/lead'
     | '/lovable/email/transactional/preview'
   id:
@@ -84,6 +95,7 @@ export interface FileRouteTypes {
     | '/'
     | '/diagnostico'
     | '/obrigado'
+    | '/sitemap.xml'
     | '/api/public/lead'
     | '/lovable/email/transactional/preview'
   fileRoutesById: FileRoutesById
@@ -92,12 +104,20 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   DiagnosticoRoute: typeof DiagnosticoRoute
   ObrigadoRoute: typeof ObrigadoRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   ApiPublicLeadRoute: typeof ApiPublicLeadRoute
   LovableEmailTransactionalPreviewRoute: typeof LovableEmailTransactionalPreviewRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/obrigado': {
       id: '/obrigado'
       path: '/obrigado'
@@ -140,6 +160,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   DiagnosticoRoute: DiagnosticoRoute,
   ObrigadoRoute: ObrigadoRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   ApiPublicLeadRoute: ApiPublicLeadRoute,
   LovableEmailTransactionalPreviewRoute: LovableEmailTransactionalPreviewRoute,
 }

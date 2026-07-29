@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /diagnostico
+Disallow: /obrigado
+
+Sitemap: https://spaceads.com.br/sitemap.xml
