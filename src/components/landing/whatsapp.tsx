@@ -6,11 +6,7 @@ export const waLink = (message: string) =>
 export function WhatsAppIcon({ className = "size-4" }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path
-        fillRule="evenodd"
-        d="M12 2C6.48 2 2 6.48 2 12c0 1.82.49 3.53 1.35 5L2 22l5.09-1.32A9.96 9.96 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 17.5c-1.45 0-2.81-.4-3.97-1.08l-.29-.17-3.75.97.99-3.6-.19-.32C4.37 14.62 4 13.12 4 11.5 4 7.36 7.36 4 11.5 4S19 7.36 19 11.5 15.64 19.5 11.5 19.5z"
-        clipRule="evenodd"
-      />
+      <path d="M20 10c0 4.42-3.58 8-8 8-1.45 0-2.81-.4-3.97-1.08L4 18l1.04-3.77C4.37 13.12 4 11.62 4 10c0-4.42 3.58-8 8-8s8 3.58 8 8z" />
     </svg>
   );
 }
