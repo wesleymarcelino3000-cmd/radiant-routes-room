@@ -89,7 +89,7 @@ export const benefits: Benefit[] = [
     desc: "Sua empresa passa a ter a cara de quem entrega qualidade.",
   },
   {
-    icon: MessageCircle,
+    icon: WhatsAppIcon,
     title: "Cliente fala com você",
     desc: "Botão de WhatsApp em destaque para não perder nenhuma venda.",
   },
