@@ -6,7 +6,6 @@ import {
   MapPin,
   Clock,
   Sparkles,
-  MessageCircle,
   Lightbulb,
   Hammer,
   Rocket,
