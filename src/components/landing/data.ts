@@ -1,13 +1,14 @@
 import {
-  Palette,
-  Smartphone,
-  Search,
-  Zap,
-  MessageCircle,
-  Server,
   ShieldCheck,
+  Search,
+  MapPin,
+  Clock,
+  Sparkles,
+  MessageCircle,
+  Phone,
+  Lightbulb,
+  Hammer,
   Rocket,
-  MessagesSquare,
   type LucideIcon,
 } from "lucide-react";
 
@@ -31,24 +32,24 @@ export const services: Service[] = [
     tag: "01",
     title: "Criação de sites profissionais",
     short: "um site profissional",
-    desc: "Nossa especialidade. Sites modernos, rápidos e otimizados para o Google — feitos para transformar visitantes em clientes todos os dias.",
-    tech: ["Design exclusivo", "SEO", "Responsivo", "Alta velocidade"],
+    desc: "Nossa especialidade. Sites bonitos, rápidos e feitos para o seu cliente encontrar você no Google e entrar em contato.",
+    tech: ["Design exclusivo", "Aparece no Google", "Funciona no celular", "Botão de WhatsApp"],
     featured: true,
-    badge: "Principal",
+    badge: "Mais procurado",
   },
   {
     tag: "02",
-    title: "Sistemas sob medida",
-    short: "um sistema sob medida",
-    desc: "Para quem precisa ir além do site: automatize pedidos, estoque, agendamentos e financeiro com uma solução feita para o seu negócio.",
-    tech: ["Node.js", "PostgreSQL", "APIs", "Cloud"],
+    title: "Sistemas para automatizar sua empresa",
+    short: "um sistema para minha empresa",
+    desc: "Para quem quer parar de anotar tudo no papel. Controle pedidos, agendamentos, estoque e clientes em um único lugar.",
+    tech: ["Feito sob medida", "Fácil de usar", "Acesso de qualquer lugar"],
   },
   {
     tag: "03",
-    title: "Aplicativos Android e iOS",
+    title: "Aplicativos para celular",
     short: "um aplicativo",
-    desc: "Solução avançada para empresas que querem um produto digital próprio. Apps rápidos, intuitivos e focados em recorrência.",
-    tech: ["React Native", "Flutter", "Swift", "Kotlin"],
+    desc: "Para empresas que querem ter o próprio app na Play Store e App Store, com a sua marca e as suas regras.",
+    tech: ["Android", "iPhone", "Sua marca", "Notificações"],
   },
 ];
 
@@ -60,34 +61,34 @@ export type Benefit = {
 
 export const benefits: Benefit[] = [
   {
-    icon: Palette,
-    title: "Design exclusivo",
-    desc: "Nada de tema pronto. Cada site é desenhado do zero para a identidade do seu negócio.",
-  },
-  {
-    icon: Smartphone,
-    title: "100% responsivo",
-    desc: "Perfeito no celular, tablet e desktop — onde o seu cliente estiver.",
+    icon: ShieldCheck,
+    title: "Passa mais confiança",
+    desc: "Uma empresa com site é levada a sério. Ponto.",
   },
   {
     icon: Search,
-    title: "SEO otimizado",
-    desc: "Estrutura pronta para aparecer no Google e atrair clientes todos os dias.",
+    title: "Aparece no Google",
+    desc: "Seu cliente pesquisa e encontra a sua empresa antes do concorrente.",
   },
   {
-    icon: Zap,
-    title: "Alta velocidade",
-    desc: "Carregamento em segundos. Site rápido converte muito mais.",
+    icon: MapPin,
+    title: "Fica fácil de achar",
+    desc: "Endereço, horário e WhatsApp — tudo em um lugar só.",
+  },
+  {
+    icon: Clock,
+    title: "Vende 24 horas por dia",
+    desc: "Mesmo quando você está dormindo, o site continua trabalhando.",
+  },
+  {
+    icon: Sparkles,
+    title: "Mais profissional",
+    desc: "Sua empresa passa a ter a cara de quem entrega qualidade.",
   },
   {
     icon: MessageCircle,
-    title: "Integração com WhatsApp",
-    desc: "Botão direto para o cliente falar com você no canal que ele já usa.",
-  },
-  {
-    icon: Server,
-    title: "Hospedagem e suporte",
-    desc: "Cuidamos da hospedagem, dos backups e de qualquer ajuste depois da entrega.",
+    title: "Cliente fala com você",
+    desc: "Botão de WhatsApp em destaque para não perder nenhuma venda.",
   },
 ];
 
@@ -225,28 +226,28 @@ export const testimonials: Testimonial[] = [
 
 export const faqs = [
   {
-    q: "Como funciona o orçamento de um projeto?",
-    a: "Cada projeto é único, então preferimos entender antes de falar em valores. Marcamos uma conversa inicial de 30 minutos, sem compromisso, para conhecer seu negócio e objetivos. Depois enviamos uma proposta detalhada com escopo, prazo e investimento sob medida.",
+    q: "Preciso pagar tudo de uma vez?",
+    a: "Não. A gente parcela do jeito que caber no seu bolso. É só falar com a gente que a gente encontra um plano que funcione para o seu momento.",
   },
   {
-    q: "Em quanto tempo meu site ou sistema fica pronto?",
-    a: "Sites institucionais entre 2 e 4 semanas. E-commerces e sistemas sob medida entre 6 e 12 semanas. Aplicativos entre 2 e 4 meses. Definimos o prazo real logo na proposta — e cumprimos.",
+    q: "Quanto tempo demora para o site ficar pronto?",
+    a: "Um site simples fica pronto entre 1 e 2 semanas. Sites com mais páginas ou vendas online levam de 3 a 6 semanas. A gente combina o prazo antes de começar e cumpre.",
   },
   {
-    q: "Preciso entender de tecnologia para trabalhar com vocês?",
-    a: "Não. Conversamos em linguagem simples, sem jargão. Explicamos cada etapa e mostramos o progresso em ambiente de teste toda semana para você acompanhar e opinar.",
+    q: "Vocês dão suporte depois que o site fica pronto?",
+    a: "Sim. Depois da entrega, você tem 90 dias de suporte gratuito para qualquer ajuste. Depois disso, oferecemos planos mensais bem em conta para cuidar do seu site.",
   },
   {
-    q: "O código e o site ficam no meu nome?",
-    a: "Sim, sempre. Tudo que produzimos é seu: código-fonte, domínio, contas de hospedagem e acessos. Você não fica preso a nós.",
+    q: "Meu site vai aparecer no Google?",
+    a: "Sim. Todo site que fazemos já sai preparado para aparecer nas pesquisas do Google. Com o tempo, sua empresa vai subindo nos resultados.",
   },
   {
-    q: "Vocês dão manutenção depois de entregar?",
-    a: "Sim. Oferecemos planos mensais com atualizações, backups, monitoramento e pequenos ajustes. Também atendemos sob demanda quando você preferir.",
+    q: "Consigo atualizar o site sozinho depois?",
+    a: "Sim, se você quiser. A gente pode deixar um painel simples para você mesmo trocar textos, fotos e preços. Se preferir, a gente atualiza para você.",
   },
   {
-    q: "Atendem clientes de qualquer região?",
-    a: "Sim. Atendemos todo o Brasil de forma 100% remota, com reuniões por videoconferência e comunicação por WhatsApp e e-mail.",
+    q: "Preciso entender de tecnologia?",
+    a: "Não precisa entender nada. A gente conversa em português claro, sem palavra difícil, e explica cada passo. Você só precisa saber o que quer para sua empresa.",
   },
 ];
 

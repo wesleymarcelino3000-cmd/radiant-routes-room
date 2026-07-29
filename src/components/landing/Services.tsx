@@ -1,10 +1,9 @@
-import { ArrowUpRight, Check } from "lucide-react";
+import { ArrowUpRight, Check, Star } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 
 import { services } from "./data";
 import { waLink, WhatsAppIcon } from "./whatsapp";
 import { Reveal, SectionLabel } from "./Reveal";
-import { cn } from "@/lib/utils";
 
 export function Services() {
   const [featured, ...others] = services;
@@ -19,13 +18,9 @@ export function Services() {
               id="servicos-title"
               className="font-display text-4xl leading-[1.06] font-semibold tracking-[-0.025em] md:text-5xl"
             >
-              Nossa especialidade é{" "}
-              <span className="serif-it text-gradient">criar sites que vendem.</span>
+              O que a gente{" "}
+              <span className="serif-it text-gradient">faz por você.</span>
             </h2>
-            <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              Também desenvolvemos sistemas e aplicativos sob medida para empresas que precisam
-              ir além.
-            </p>
           </div>
         </Reveal>
 
@@ -36,7 +31,7 @@ export function Services() {
             <div className="relative grid gap-10 md:grid-cols-12 md:gap-12">
               <div className="md:col-span-7">
                 <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/15 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-primary">
-                  <span className="size-1.5 rounded-full bg-primary" />
+                  <Star className="size-3 fill-primary" />
                   {featured.badge ?? "Destaque"}
                 </div>
                 <h3 className="mb-5 font-display text-3xl leading-[1.1] font-semibold tracking-tight md:text-[2.6rem]">
@@ -62,7 +57,7 @@ export function Services() {
                     to="/diagnostico"
                     className="group/btn inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground glow-primary transition-all duration-300 hover:-translate-y-0.5"
                   >
-                    Solicitar orçamento
+                    Peça um orçamento
                     <ArrowUpRight className="size-4 transition-transform duration-300 group-hover/btn:rotate-45" />
                   </Link>
                   <a
@@ -80,15 +75,15 @@ export function Services() {
               <div className="md:col-span-5">
                 <div className="glass relative rounded-3xl p-6 md:p-7">
                   <div className="mb-4 font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
-                    Um site profissional inclui
+                    O que já vem incluso
                   </div>
                   <ul className="space-y-3.5 text-sm">
                     {[
-                      "Design exclusivo para o seu negócio",
-                      "Otimizado para Google (SEO)",
-                      "Rápido em qualquer dispositivo",
-                      "Integração com WhatsApp",
-                      "Hospedagem e suporte inclusos",
+                      "Site feito só para você",
+                      "Aparece no Google",
+                      "Funciona bem no celular",
+                      "Botão de WhatsApp",
+                      "Hospedagem e suporte",
                     ].map((t) => (
                       <li key={t} className="flex items-start gap-3">
                         <span className="mt-0.5 grid size-5 place-items-center rounded-full bg-lime/20 text-lime">
@@ -108,16 +103,11 @@ export function Services() {
         <div className="mt-8 grid gap-5 md:mt-10 md:grid-cols-2">
           {others.map((s, i) => (
             <Reveal key={s.tag} delay={i * 80}>
-              <article
-                className={cn(
-                  "group h-full rounded-3xl border border-border bg-card/40 p-7 backdrop-blur transition-all duration-500 hover:-translate-y-1 hover:border-foreground/25 md:p-8"
-                )}
-              >
+              <article className="group h-full rounded-3xl border border-border bg-card/40 p-7 backdrop-blur transition-all duration-500 hover:-translate-y-1 hover:border-foreground/25 md:p-8">
                 <div className="mb-5 flex items-center justify-between">
                   <span className="rounded-full border border-border px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                    Solução avançada
+                    Também fazemos
                   </span>
-                  <span className="font-mono text-xs text-muted-foreground/60">/{s.tag}</span>
                 </div>
                 <h3 className="mb-3 font-display text-2xl font-semibold tracking-tight">
                   {s.title}
@@ -127,20 +117,20 @@ export function Services() {
                   {s.tech.map((t) => (
                     <li
                       key={t}
-                      className="rounded-full border border-border px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider text-muted-foreground/80"
+                      className="rounded-full border border-border px-2.5 py-1 text-[11px] text-muted-foreground/80"
                     >
                       {t}
                     </li>
                   ))}
                 </ul>
                 <a
-                  href={waLink(`Olá! Quero conversar sobre ${s.short} para o meu negócio.`)}
+                  href={waLink(`Olá! Quero conversar sobre ${s.short}.`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group/link inline-flex items-center gap-2 text-sm font-medium text-primary"
                 >
                   <WhatsAppIcon className="size-3.5" />
-                  <span className="link-underline">Conversar sobre projeto</span>
+                  <span className="link-underline">Quero saber mais</span>
                   <ArrowUpRight className="size-4 transition-transform duration-300 group-hover/link:rotate-45" />
                 </a>
               </article>

@@ -4,7 +4,7 @@ import { Nav } from "@/components/landing/Nav";
 import { Hero } from "@/components/landing/Hero";
 import { Benefits } from "@/components/landing/Benefits";
 import { Services } from "@/components/landing/Services";
-import { Portfolio } from "@/components/landing/Portfolio";
+import { HowItWorks } from "@/components/landing/HowItWorks";
 import { Testimonials } from "@/components/landing/Testimonials";
 import { Faq } from "@/components/landing/Faq";
 import { CtaBlock, Footer } from "@/components/landing/Cta";
