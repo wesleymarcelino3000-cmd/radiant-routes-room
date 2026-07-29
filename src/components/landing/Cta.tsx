@@ -79,7 +79,7 @@ export function Footer() {
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">
             Sites, sistemas e apps sob medida para empresas que querem vender mais e trabalhar
-            menos. Prazo por escrito, garantia de 90 dias e contato direto com quem constrói.
+            menos. Prazo por escrito, garantia de 90 dias e acompanhamento próximo do início ao fim.
           </p>
         </div>
         <div className="md:col-span-4">
