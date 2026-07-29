@@ -257,8 +257,10 @@ export function DiagnosticForm() {
         {current.type === "contact" && (
           <form onSubmit={submit} className="space-y-4">
             <div>
-              <label className="block text-xs font-medium text-muted-foreground mb-2">Nome completo</label>
+              <label htmlFor="diagnostic-nome" className="block text-xs font-medium text-muted-foreground mb-2">Nome completo</label>
               <input
+                id="diagnostic-nome"
+                name="nome"
                 required
                 maxLength={100}
                 placeholder="Seu nome"
@@ -269,8 +271,10 @@ export function DiagnosticForm() {
             </div>
             <div className="grid md:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-medium text-muted-foreground mb-2">E-mail</label>
+                <label htmlFor="diagnostic-email" className="block text-xs font-medium text-muted-foreground mb-2">E-mail</label>
                 <input
+                  id="diagnostic-email"
+                  name="email"
                   required
                   type="email"
                   maxLength={150}
@@ -281,8 +285,10 @@ export function DiagnosticForm() {
                 />
               </div>
               <div>
-                <label className="block text-xs font-medium text-muted-foreground mb-2">WhatsApp</label>
+                <label htmlFor="diagnostic-telefone" className="block text-xs font-medium text-muted-foreground mb-2">WhatsApp</label>
                 <input
+                  id="diagnostic-telefone"
+                  name="telefone"
                   required
                   maxLength={30}
                   placeholder="(37) 90000-0000"
