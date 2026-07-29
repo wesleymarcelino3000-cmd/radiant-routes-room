@@ -7,7 +7,7 @@ import { Reveal, SectionLabel } from "./Reveal";
 const steps = [
   {
     n: "1",
-    icon: MessageCircle,
+    icon: WhatsAppIcon,
     title: "Você entra em contato",
     desc: "Manda uma mensagem no WhatsApp ou preenche o formulário. Sem compromisso.",
   },
