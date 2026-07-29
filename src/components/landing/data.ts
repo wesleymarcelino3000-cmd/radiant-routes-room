@@ -269,8 +269,8 @@ export const stack = [
 ];
 
 export const navLinks = [
+  { href: "#beneficios", label: "Vantagens" },
   { href: "#servicos", label: "Serviços" },
-  { href: "#beneficios", label: "Benefícios" },
-  { href: "#portfolio", label: "Portfólio" },
+  { href: "#como-funciona", label: "Como funciona" },
   { href: "#faq", label: "Dúvidas" },
 ];
