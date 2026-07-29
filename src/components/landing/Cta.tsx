@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, Instagram, Mail } from "lucide-react";
+import { ArrowUpRight, Instagram } from "lucide-react";
 
 import { navLinks } from "./data";
 import { waLink, WhatsAppIcon } from "./whatsapp";
@@ -18,8 +18,8 @@ export function CtaBlock() {
           className="animate-drift absolute -top-24 -right-24 size-80 rounded-full bg-primary/20 blur-3xl"
         />
 
-        <div className="relative grid gap-10 p-7 sm:p-10 md:grid-cols-12 md:gap-12 md:p-16 lg:p-20">
-          <div className="md:col-span-8">
+        <div className="relative grid gap-10 p-7 sm:p-10 md:p-16 lg:p-20">
+          <div className="mx-auto max-w-3xl text-center">
             <Reveal>
               <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-lime/25 bg-lime/10 px-4 py-1.5 font-mono text-[11px] uppercase tracking-[0.2em] text-lime">
                 <span className="size-1.5 rounded-full bg-lime animate-pulse" />
@@ -32,11 +32,11 @@ export function CtaBlock() {
                 Cada dia parado é dinheiro indo para o{" "}
                 <span className="serif-it text-gradient">concorrente.</span>
               </h2>
-              <p className="mb-10 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
+              <p className="mx-auto mb-10 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
                 Em 30 minutos você sai com clareza total do que precisa, quanto custa e em quanto
                 tempo fica pronto. Grátis, sem enrolação e sem pressão de venda.
               </p>
-              <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+              <div className="flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap sm:items-center">
                 <Link
                   to="/diagnostico"
                   className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-all duration-300 glow-primary hover:-translate-y-0.5 sm:w-auto sm:px-7 sm:py-4"
@@ -56,49 +56,6 @@ export function CtaBlock() {
               </div>
             </Reveal>
           </div>
-
-          <Reveal className="md:col-span-4" delay={120}>
-            <div className="rounded-3xl border border-border bg-background/40 p-7 backdrop-blur">
-              <div className="mb-5 font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
-                Contato direto
-              </div>
-              <ul className="space-y-4">
-                <li>
-                  <a
-                    href="mailto:spaceads.tech@gmail.com"
-                    className="group flex items-start gap-3 text-sm"
-                  >
-                    <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-primary/15 text-primary">
-                      <Mail className="size-4" aria-hidden="true" />
-                    </span>
-                    <span>
-                      <span className="block text-xs text-muted-foreground">E-mail</span>
-                      <span className="link-underline">contato@spaceads</span>
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={waLink("Olá! Quero falar com a Space Ads.")}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-start gap-3 text-sm"
-                  >
-                    <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-whatsapp/15 text-whatsapp">
-                      <WhatsAppIcon className="size-4" aria-hidden="true" />
-                    </span>
-                    <span>
-                      <span className="block text-xs text-muted-foreground">WhatsApp</span>
-                      <span className="link-underline">+55 37 92000-8631</span>
-                    </span>
-                  </a>
-                </li>
-              </ul>
-              <div className="mt-6 border-t border-border pt-5 text-xs text-muted-foreground">
-                Atendimento remoto para todo o Brasil.
-              </div>
-            </div>
-          </Reveal>
         </div>
       </div>
     </section>
