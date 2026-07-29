@@ -113,7 +113,7 @@ export const guarantees: Guarantee[] = [
     desc: "Nasce preparado para 10 ou 10 mil clientes por dia. Sem retrabalho quando o seu negócio crescer.",
   },
   {
-    icon: MessagesSquare,
+    icon: MessageCircle,
     code: "G.03",
     title: "Você fala direto com o dev",
     desc: "Sem intermediário e sem gerente enrolando. Contato direto no WhatsApp com quem constrói o seu projeto.",

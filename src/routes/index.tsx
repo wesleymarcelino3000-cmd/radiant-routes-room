@@ -13,20 +13,20 @@ import { WhatsAppFab } from "@/components/landing/whatsapp";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Space Ads — Criação de sites profissionais que vendem" },
+      { title: "Space Ads — Site profissional para sua empresa vender mais" },
       {
         name: "description",
         content:
-          "Especialistas em criação de sites profissionais, rápidos e otimizados para o Google. Também desenvolvemos sistemas e aplicativos sob medida. Solicite seu orçamento.",
+          "Criamos sites profissionais, rápidos e acessíveis para pequenas empresas. Preço que cabe no seu bolso, sem complicação. Peça um orçamento sem compromisso.",
       },
       {
         property: "og:title",
-        content: "Space Ads — Criação de sites profissionais que vendem",
+        content: "Space Ads — Site profissional para sua empresa vender mais",
       },
       {
         property: "og:description",
         content:
-          "Sites modernos, rápidos e otimizados para SEO. Design exclusivo, integração com WhatsApp, hospedagem e suporte inclusos.",
+          "Site profissional para pequenas empresas: aparece no Google, funciona no celular e ajuda seu negócio a vender mais. Preço acessível.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
@@ -45,7 +45,7 @@ function HomePage() {
         <Hero />
         <Benefits />
         <Services />
-        <Portfolio />
+        <HowItWorks />
         <Testimonials />
         <Faq />
         <CtaBlock />
