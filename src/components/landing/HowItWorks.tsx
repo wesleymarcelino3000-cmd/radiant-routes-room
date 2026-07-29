@@ -1,12 +1,13 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, MessageCircle, Lightbulb, Hammer, Rocket } from "lucide-react";
+import { ArrowUpRight, Lightbulb, Hammer, Rocket } from "lucide-react";
+import { WhatsAppIcon } from "./whatsapp";
 
 import { Reveal, SectionLabel } from "./Reveal";
 
 const steps = [
   {
     n: "1",
-    icon: MessageCircle,
+    icon: WhatsAppIcon,
     title: "Você entra em contato",
     desc: "Manda uma mensagem no WhatsApp ou preenche o formulário. Sem compromisso.",
   },

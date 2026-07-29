@@ -1,21 +1,23 @@
+import type { ComponentType } from "react";
+
 import {
   ShieldCheck,
   Search,
   MapPin,
   Clock,
   Sparkles,
-  MessageCircle,
-  Phone,
   Lightbulb,
   Hammer,
   Rocket,
-  type LucideIcon,
 } from "lucide-react";
 
+import { WhatsAppIcon } from "./whatsapp";
 import projectFintech from "@/assets/project-fintech.jpg";
 import projectMobile from "@/assets/project-mobile.jpg";
 import projectSaas from "@/assets/project-saas.jpg";
 import projectBrand from "@/assets/project-brand.jpg";
+
+type IconComponent = ComponentType<{ className?: string }>;
 
 export type Service = {
   tag: string;
@@ -54,7 +56,7 @@ export const services: Service[] = [
 ];
 
 export type Benefit = {
-  icon: LucideIcon;
+  icon: IconComponent;
   title: string;
   desc: string;
 };
@@ -86,14 +88,14 @@ export const benefits: Benefit[] = [
     desc: "Sua empresa passa a ter a cara de quem entrega qualidade.",
   },
   {
-    icon: MessageCircle,
+    icon: WhatsAppIcon,
     title: "Cliente fala com você",
     desc: "Botão de WhatsApp em destaque para não perder nenhuma venda.",
   },
 ];
 
 export type Guarantee = {
-  icon: LucideIcon;
+  icon: IconComponent;
   code: string;
   title: string;
   desc: string;
@@ -113,7 +115,7 @@ export const guarantees: Guarantee[] = [
     desc: "Nasce preparado para 10 ou 10 mil clientes por dia. Sem retrabalho quando o seu negócio crescer.",
   },
   {
-    icon: MessageCircle,
+    icon: WhatsAppIcon,
     code: "G.03",
     title: "Você fala direto com o dev",
     desc: "Sem intermediário e sem gerente enrolando. Contato direto no WhatsApp com quem constrói o seu projeto.",
