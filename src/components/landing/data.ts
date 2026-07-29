@@ -1,3 +1,5 @@
+import type { ComponentType } from "react";
+
 import {
   ShieldCheck,
   Search,
@@ -5,17 +7,18 @@ import {
   Clock,
   Sparkles,
   MessageCircle,
-  Phone,
   Lightbulb,
   Hammer,
   Rocket,
-  type LucideIcon,
 } from "lucide-react";
 
+import { WhatsAppIcon } from "./whatsapp";
 import projectFintech from "@/assets/project-fintech.jpg";
 import projectMobile from "@/assets/project-mobile.jpg";
 import projectSaas from "@/assets/project-saas.jpg";
 import projectBrand from "@/assets/project-brand.jpg";
+
+type IconComponent = ComponentType<{ className?: string }>;
 
 export type Service = {
   tag: string;
